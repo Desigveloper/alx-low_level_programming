@@ -11,7 +11,7 @@ int main(void)
 	
 	for (num = 0; num < 10; num++)
 	{
-		write(num);
+		printf("%d", num);
 	}
 
 	putchar('\n');
