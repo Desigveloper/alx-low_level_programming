@@ -15,7 +15,7 @@
 		putchar(chlow);
 	}
 
-	for(for chcap = 'A'; chcap <= 'Z'; chcap++)
+	for( chcap = 'A'; chcap <= 'Z'; chcap++)
 	{
 		putchar(chcap);
 	}
