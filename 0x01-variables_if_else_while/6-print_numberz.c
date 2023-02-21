@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main = The entry point
+ * main -  The entry point
  *
  * Return : Always returnd 0
  */
@@ -10,12 +10,11 @@ int main(void)
 
 	num = 0;
 
-	do
-	{
-		putchar((char) num);
+	do {
+		putchar('0' + num);
 		num++;
 	} while (num < 10);
 
 	putchar('\n');
-	return 0;
+	return (0);
 }
