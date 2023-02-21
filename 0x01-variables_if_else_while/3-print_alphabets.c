@@ -6,11 +6,11 @@
  * Return: Always returns 0
  */
  
- int main(void)
+int main(void)
 {
 	char chlow, chcap;
 
-	for(chlow = 'a'; chlow <- 'z'; chlow++)
+	for(chlow = 'a'; chlow <= 'z'; chlow++)
 	{
 		putchar(chlow);
 	}
