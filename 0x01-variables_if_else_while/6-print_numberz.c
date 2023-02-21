@@ -12,7 +12,7 @@ int main(void)
 
 	do
 	{
-		putchar('$c', num);
+		putchar((char) num);
 		num++;
 	} while (num < 10)
 
