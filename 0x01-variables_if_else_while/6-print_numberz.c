@@ -6,11 +6,15 @@
  */
 int main(void)
 {
-	char num;
-	for (num = 0; num < 10; num++)
+	int num;
+
+	num = 0;
+
+	do
 	{
-		putchar(num);
-	}
+		putchar('$c', num);
+		num++;
+	} while (num < 10)
 
 	putchar('\n');
 	return 0;
