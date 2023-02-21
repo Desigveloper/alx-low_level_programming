@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main = The entry point
+* main - The entry point
 *
 * Return: Always returns the passed number
 */
