@@ -7,13 +7,12 @@
 int main(void)
 {
 	int  num;
-	num = 48;
 
-	while(num <= 57) {
+	for (num = 48; num <= 57; num++) 
+	{
 		putchar(num);
 		putchar(44); /* ASCII code for comma */
 		putchar(32);
-		num++;
 	}
 
 	putchar(10); /* ASCII code for new line */
