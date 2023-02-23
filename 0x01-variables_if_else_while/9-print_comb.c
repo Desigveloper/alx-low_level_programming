@@ -6,14 +6,15 @@
 
 int main(void)
 {
-	int num = 48;
+	int  num;
+	num = 48;
 
 	do {
-		putchar(num);
+		putchar('num');
 		putchar(',');
 		num++;
 	} while (num <= 57);
 
-	putchar('10');
+	putchar('\n');
 	return (0);
 }
