@@ -6,12 +6,12 @@
 
 int main(void)
 {
-	int  num;
+	int num;
 
 	for (num = 48; num <= 57; num++) 
 	{
 		putchar(num);
-		if (num =! 57)
+		if (num != 57)
 		{
 			putchar(44); /* ASCII code for comma */
 			putchar(32);
