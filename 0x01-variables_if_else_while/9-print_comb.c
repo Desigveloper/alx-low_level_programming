@@ -3,20 +3,22 @@
  *
  * Return: Always returns 0
  */
+#include <stdio.h>
 
 int main(void)
 {
-	int num;
+	int num = 48;
 
-	for (num = 48; num <= 57; num++) 
-	{
+	do {
 		putchar(num);
+
 		if (num != 57)
 		{
 			putchar(44); /* ASCII code for comma */
 			putchar(32);
 		}
-	}
+		num++
+	} while (num <= 57);
 
 	putchar(10); /* ASCII code for new line */
 	return (0);
