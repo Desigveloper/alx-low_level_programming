@@ -9,8 +9,8 @@ int main(void)
 	int num = 48;
 
 	do {
-		putchar('num');
-		putchar(',')
+		putchar(num);
+		putchar(',');
 		num++;
 	} while (num <= 57);
 
