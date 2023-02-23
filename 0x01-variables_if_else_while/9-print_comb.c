@@ -17,7 +17,7 @@ int main(void)
 			putchar(44); /* ASCII code for comma */
 			putchar(32);
 		}
-		num++
+		num++;
 	} while (num <= 57);
 
 	putchar(10); /* ASCII code for new line */
