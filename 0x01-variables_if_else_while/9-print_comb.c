@@ -10,11 +10,11 @@ int main(void)
 	num = 48;
 
 	do {
-		putchar('num');
-		putchar(',');
+		putchar(num);
+		putchar(32); /* ASCII code for comma */
 		num++;
 	} while (num <= 57);
 
-	putchar('\n');
+	putchar(10); /* ASCII code for new line */
 	return (0);
 }
