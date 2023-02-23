@@ -11,7 +11,8 @@ int main(void)
 
 	do {
 		putchar(num);
-		putchar(32); /* ASCII code for comma */
+		putchar(44); /* ASCII code for comma */
+		putchar(32);
 		num++;
 	} while (num <= 57);
 
