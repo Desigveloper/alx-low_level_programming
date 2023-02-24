@@ -19,11 +19,15 @@ int main(void)
 		putchar(ch2 / 10);
 		putchar(ch2 % 10);
 
+
 		if(ch1 != 9 && ch2 != 9)
 		{
 			putchar(44);
 			putchar(32);
 		}
+		
+		ch1++;
+		ch2++;
 	}
 
 	putchar(10); /* ASCII code for new line*/
