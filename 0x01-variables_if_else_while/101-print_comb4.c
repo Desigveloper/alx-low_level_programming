@@ -11,11 +11,11 @@ int main(void)
 {
 int ch1, ch2, ch3;
 
-for (ch1 = 48; ch2 <= 55; ch1++)
+for (ch1 = 48; ch2 <= 57; ch1++)
 {
-	for (ch2 = 48; ch2 <= 56; ch2++)
+	for (ch2 = 49; ch2 <= 57; ch2++)
 	{
-		for (ch3 = 48; ch3 <= 57; ch3++)
+		for (ch3 = 50; ch3 <= 57; ch3++)
 		{
 			if (ch1 < ch2 && ch2 < ch3)
 			{
