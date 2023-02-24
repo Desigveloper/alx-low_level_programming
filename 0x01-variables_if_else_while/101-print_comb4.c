@@ -22,11 +22,8 @@ int main(void)
 					putchar(ch1);
 					putchar(ch2);
 					putchar(ch3);
-					if (ch1 != 55 || ch2 != 56)
-					{
-						putchar(44);
-						putchar(32);
-					}
+					putchar(44);
+					putchar(32);
 				}
 			}
 		}
