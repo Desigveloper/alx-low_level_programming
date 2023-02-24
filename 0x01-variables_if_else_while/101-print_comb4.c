@@ -17,7 +17,7 @@ for (ch1 = 48; ch2 <= 57; ch1++)
 	{
 		for (ch3 = 50; ch3 <= 57; ch3++)
 		{
-			if (ch1 < ch2 && ch2 < ch3)
+			if (ch3 > ch2 && ch2 > ch1)
 			{
 				putchar(ch1);
 				putchar(ch2);
