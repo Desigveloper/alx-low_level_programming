@@ -8,14 +8,19 @@
 #include <stdio.h>
 int main(void)
 {
-	int ch1, ch2;
+	int ch1 = 48, ch2 = 48;
 
-	for (ch1 = 48; ch1 <= 57; ch1++)
+	while(ch1 <= 57 && ch2 <= 57)
 	{
-		for (ch2 = 48; ch2 <= 57; ch2++)
+		putchar((ch1 / 10) + 48);
+		putchar((ch1 % 10) + 48);
+		putchar(32);
+
+		putchar(ch2 / 10);
+		putchar(ch2 % 10);
+
+		if(ch1 != 9 && ch2 != 9)
 		{
-			putchar(ch1);
-			putchar(ch2);
 			putchar(44);
 			putchar(32);
 		}
