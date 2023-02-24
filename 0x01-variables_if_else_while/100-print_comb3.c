@@ -22,9 +22,11 @@ int main(void)
 				{
 					putchar(ch1);
 					putchar(ch2);
-					putchar(44); /*ASCII character for comma*/
-					putchar(32); /*ASCII character for space*/
-					if (ch1 != 56 && ch2 != 57)
+					if (ch1 != 56 || ch2 != 57)
+					{
+						putchar(44); /*ASCII character for comma*/
+						putchar(32); /*ASCII character for space*/
+					}
 				}
 			}
 		}
