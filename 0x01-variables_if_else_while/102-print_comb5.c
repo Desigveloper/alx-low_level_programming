@@ -17,9 +17,9 @@ int main(void)
 			putchar((ch1 % 10) + 48);
 			putchar(32); /*ASCII for space*/
 
-			putchar(ch2 / 10);
-			putchar(ch2 % 10);
-		
+			putchar((ch2 / 10) + 48);
+			putchar((ch2 % 10) + 48);
+
 			if (ch1 != 98 || ch2 != 99)
 			{
 				putchar(44); /*ASCII for comma*/
