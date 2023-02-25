@@ -26,9 +26,8 @@ int main(void)
 				{
 					putchar(44); /*ASCII for comma*/
 					putchar(32); /* ASCII for space*/
-			
 				}
-		
+
 			}
 		}
 
