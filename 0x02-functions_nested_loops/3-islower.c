@@ -3,7 +3,7 @@
 /**
  * _islower - Chect is a charater a alowercase letter. Return 1 if true else 0
  * c - takes an int value and pass to the function at execution
- * Return: Returns 1 (Success) if true
+ * Return: Returns 1 (Success) if true else 0
 */
 
 int _islower(int c)
@@ -12,4 +12,5 @@ int _islower(int c)
 	{
 		return (1);
 	}
+	return (0);
 }
