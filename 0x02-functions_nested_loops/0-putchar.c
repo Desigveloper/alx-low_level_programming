@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * main - The entry and exit point of program
+ * -putchar - print the characters _,p,u,t,c,h,a,r into _putchar
+ * Return: Always returns 0 (Success)
+*/
+
 int main(void)
 {
 	_putchar('_');
