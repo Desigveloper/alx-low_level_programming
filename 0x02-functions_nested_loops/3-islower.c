@@ -2,7 +2,7 @@
 
 /**
  * _islower - Chect is a charater a alowercase letter. Return 1 if true else 0
- * c: takes an int value and pass to the function at execution
+ * @c: argument- takes an int value and pass to the function at execution
  * Return: Returns 1 (Success) if true else 0
 */
 
