@@ -1,9 +1,9 @@
+#include "main.h"
 /**
 *  main - The entry and exit point.
 *
 *  Return: Always returns 0 (Success)
 */
-#include "main.h"
 
 int main(void)
 {
