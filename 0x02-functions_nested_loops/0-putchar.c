@@ -1,11 +1,5 @@
 #include "main.h"
 
-/**
-*  main - The entry and exit point.
-*
-*  Return: Always returns 0 (Success)
-*/
-
 int main(void)
 {
 	_putchar('_');
