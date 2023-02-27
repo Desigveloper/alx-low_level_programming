@@ -7,5 +7,5 @@
 
 int _abs(int c)
 {
-	write(abs(c));
+	_putchar(c);
 }
