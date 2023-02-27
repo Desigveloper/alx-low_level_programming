@@ -13,11 +13,11 @@ int print_last_digit(int num)
 	if (d < 0)
 	{
 		d = -(d);
-		_putchar(d);
+		_putchar('0' + d);
 		return (d);
 	} else
 	{
-		_putchar(d);
+		_putchar(d + '0');
 		return (d);
 	}
 }
