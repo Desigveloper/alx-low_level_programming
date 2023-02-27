@@ -8,40 +8,23 @@
 
 void jack_bauer(void)
 {
-	int h, m;
+	int ht, ho, mt, mo;
 
-	for (h = 0; h <= 23; h++)
+	for (ht = 0; ht <= 2; ht++)
 	{
-		for (m = 0; m <= 59; m++)
+		for (ho = 0; ho <= 9; ho++)
 		{
-			if (h < 10 &&  m < 10)
+			for (mt = 0; mt <= 5; mt++)
 			{
-				_putchar('0');
-				fwrite(h);
-				_putchar(':');
-				_putchar('0');
-				fwrite(m);
-				_putchar('\n');
-			} else if (h < 10 && m > 10)
-			{
-				_putchar('0');
-				fwrite(h);
-				_putchar(':');
-				fwrite(m);
-				_putchar('\n');
-			} else if (h > 10 && m < 10)
-			{
-				fwrite(h);
-				_putchar(':');
-				_putchar('0');
-				fwrite(m);
-				_putchar('\n');
-			} else
-			{
-				fwrite(h);
-				_putchar(':');
-				fwrite(m);
-				_putchar('\n');
+				for (mo = 0; mo < 9; mo++)
+				{
+					_putchar('0' + ht);
+					_putchar('0' + ho);
+					_putchar(':');
+					_putchar('0' + mt);
+					_putchar('0' + mo);
+					_putchar('\n');
+				}
 			}
 		}
 	}
