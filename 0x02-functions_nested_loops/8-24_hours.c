@@ -5,7 +5,7 @@
  * @void: returns nothing
 */
 
-void jac_bauer(void)
+void jack_bauer(void)
 {
 	int h, m;
 
