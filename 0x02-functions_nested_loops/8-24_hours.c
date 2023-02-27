@@ -24,10 +24,10 @@ void jack_bauer(void)
 					 _putchar('0' + mo);
 					 _putchar('\n');
 
-					if (ht == 2 && ho == 3)
+					if (ht == 2 && ho == 3 && mt == 5
+						       	&& mo == 9)
 					{
-						if (mt == 5 && mo == 9)
-							break;
+						break;
 					}
 				}
 			}
