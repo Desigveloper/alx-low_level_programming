@@ -2,12 +2,11 @@
 
 /**
 * _abs - Prints the absolute value of a number(int)
-* @c: Parameter- takes an int argument and pass to the function at execution
+* @num: Parameter- takes an int argument and pass to the function at execution
 * Return: Always returns 0 (Success)
 */
 
-int _abs(int c)
+int _abs(int num)
 {
-	_putchar(c);
-	return (0);
+	return (num);
 }
