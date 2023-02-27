@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * jack_bauer - Prints every minute of the day
@@ -16,30 +17,30 @@ void jack_bauer(void)
 			if (h < 10 &&  m < 10)
 			{
 				_putchar('0');
-				_putchar('0' + h);
+				write(h);
 				_putchar(':');
 				_putchar('0');
-				_putchar('0' + m);
+				write(m);
 				_putchar('\n');
 			} else if (h < 10 && m > 10)
 			{
 				_putchar('0');
-				_putchar('0' + h);
+				write(h);
 				_putchar(':');
-				_putchar('0' + m);
+				write(m);
 				_putchar('\n');
 			} else if (h > 10 && m < 10)
 			{
-				_putchar('0' + h);
+				write(h);
 				_putchar(':');
 				_putchar('0');
-				_putchar('0' + m);
+				write(m);
 				_putchar('\n');
 			} else
 			{
-				_putchar('0' + h);
+				write(h);
 				_putchar(':');
-				_putchar('0' + m);
+				write(m);
 				_putchar('\n');
 			}
 		}
