@@ -17,20 +17,17 @@ void jack_bauer(void)
 			{
 				for (mo = 0; mo <= 9; mo++)
 				{
+					 _putchar('0' + ht);
+					 _putchar('0' + ho);
+					 _putchar(':');
+					 _putchar('0' + mt);
+					 _putchar('0' + mo);
+					 _putchar('\n');
+
 					if (ht == 2 && ho == 3)
 					{
 						if (mt == 5 && mo == 9)
-						{
 							break;
-						} else
-						{
-							_putchar('0' + ht);
-							_putchar('0' + ho);
-							_putchar(':');
-							_putchar('0' + mt);
-							_putchar('0' + mo);
-							_putchar('\n');
-						}
 					}
 				}
 			}
