@@ -22,25 +22,18 @@ void times_table(void)
 				_putchar('0' + c1);
 				_putchar('0' + c2);
 
-				if (row != 9 || col != 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
 			} else
 			{
 				_putchar('0' + n);
+			}
 
-
-				if (row != 9 || col != 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-				}
+			if (row != 9 || col != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
+	}
 
 		_putchar('\n');
-	}
 }
