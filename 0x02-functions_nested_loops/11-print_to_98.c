@@ -12,15 +12,15 @@ void print_to_98(int n)
 
 	while(n != cap_num)
 	{
-		if(n > cap)
+		if (n > cap_num)
 		{
-			printf(n);
+			printf("%d", n);
 			_putchar(',');
 			_putchar(' ');
 			n--;
 		} else
 		{
-			printf(n);
+			printf("%d", n);
 			_putchar(',');
 			_putchar(' ');
 			n++;
