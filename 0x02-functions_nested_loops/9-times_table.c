@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * time_table - Prints the multiplication of 9 table
