@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * time_table - Prints the multiplication of 9 table
+ * times_table - Prints the multiplication of 9 table
  * @void: function returns nothing
 */
 
@@ -19,18 +19,22 @@ void times_table(void)
 				c1 = (row * col) / 10;
 				c2 = (row * col) % 10;
 
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 				_putchar('0' + c1);
 				_putchar('0' + c2);
 
 			} else
 			{
-				_putchar('0' + n);
-			}
+				if (col != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
 
-			if (row != 9 || col != 9)
-			{
-				_putchar(',');
-				_putchar(' ');
+				_putchar('0' + n)
 			}
 		}
 
