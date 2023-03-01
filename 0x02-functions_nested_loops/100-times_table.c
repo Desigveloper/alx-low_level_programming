@@ -16,23 +16,22 @@ void print_times_table(int n)
 {
 	int row, col, product;
 
-	for (row = 0; row <= n; row++)
+	if (n >= 0 && n <= 15)
 	{
-		for (col = 0; col <= n; col++)
+		for (row = 0; row <= n; row++)
 		{
-			if (n < 0 || n > 15)
-			{
-				break;
-			} else
+			for (col = 0; col <= n; col++)
 			{
 				product = row * col;
 				if (product >= 100)
 				{
 					_if_100s(product);
-				} else if (product >= 10)
+				}
+				else if (product >= 10)
 				{
 					_if_10s(product);
-				} else
+				}
+				else
 				{
 					if (col != 0)
 					{
