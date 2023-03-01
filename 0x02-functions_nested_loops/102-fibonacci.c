@@ -32,7 +32,7 @@ void fibonacci(void)
 		}
 		else
 		{
-			num = (i - 1) + (i - 2);
+			num += (i - 1) + (i - 2);
 			printf(", %d", num);
 		}
 
