@@ -9,19 +9,26 @@
 void print_to_98(int n)
 {
 	int cap_num = 98;
-
-	while (n != cap_num)
+	
+	if (n > cap_num)
 	{
-		if (n > cap_num)
+		while (n >= cap_num)
 		{
-			printf("%d, ", n);
-			n--;
-		} else
+			if (n != cap_num)
+			{
+				printf("%d, ", n);
+				n--;
+			}
+		}
+	} else
+	{
+		while (n <= cap_num)
 		{
-			printf("%d, ", n);
-			_putchar(',');
-			_putchar(' ');
-			n++;
+			if (n != cap_num)
+			{
+				printf("%d, ", n);
+				n++;
+			}
 		}
 	}
 	putchar(10);/*ASCII character for new line*/
