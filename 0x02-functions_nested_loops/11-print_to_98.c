@@ -17,8 +17,11 @@ void print_to_98(int n)
 			if (n != cap_num)
 			{
 				printf("%d, ", n);
-				n--;
+			} else
+			{
+				printf("%d", n);
 			}
+			n--;
 		}
 	} else
 	{
@@ -27,8 +30,11 @@ void print_to_98(int n)
 			if (n != cap_num)
 			{
 				printf("%d, ", n);
-				n++;
+			} else
+			{
+				print("%d", n);
 			}
+			n++;
 		}
 	}
 	putchar(10);/*ASCII character for new line*/
