@@ -32,6 +32,7 @@ void sum_of_all_multiples(void)
 		{
 			sum += i;
 		}
-		printf("%d", sum);
 	}
+
+	printf("%d", sum);
 }
