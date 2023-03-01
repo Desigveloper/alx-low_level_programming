@@ -44,10 +44,10 @@ void print_times_table(int n)
 					_putchar('0' + product);
 				}
 			}
-		}
 
 		_putchar('\n');
-
+		
+		}
 	}
 }
 
