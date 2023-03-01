@@ -8,8 +8,7 @@
 
 void print_to_98(int n)
 {
-	int cap_num = 98;
-	
+	int cap_num = 98;	
 	if (n > cap_num)
 	{
 		while (n >= cap_num)
