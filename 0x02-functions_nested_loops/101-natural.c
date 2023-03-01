@@ -29,5 +29,5 @@ void sum_of_all_multiples(void)
 		}
 	}
 
-	printf"%d\n", sum);
+	printf("%d\n", sum);
 }
