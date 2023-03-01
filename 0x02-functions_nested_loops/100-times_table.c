@@ -3,14 +3,8 @@
 /**
  * print_times_table - Prints the multipliction table of a given a number
  *
- * _if_100s - products of 100s
- *
- * _if_10s - products of 10s
- *
  * @n: parameter
  * @int: parameter
- * @p10: parameter
- * @p100: parameter
 */
 
 void _if_100s(int);
@@ -56,6 +50,7 @@ void print_times_table(int n)
 	}
 }
 
+/* The characters to display if product of multiplication greater than 100 */
 void _if_100s(int p100)
 {
 	int c1, c2, c3;
@@ -71,7 +66,7 @@ void _if_100s(int p100)
 	_putchar('0' + c3);
 }
 
-
+/* If product of multiplication greater than 10 display this */
 void _if_10s(int p10)
 {
 	int c1, c2;
