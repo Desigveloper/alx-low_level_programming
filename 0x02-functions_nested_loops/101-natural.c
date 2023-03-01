@@ -10,7 +10,6 @@
 int main(void)
 {
 	sum_of_all_multiples();
-	_putchar(10);
 	return (0);
 }
 
@@ -31,4 +30,5 @@ void sum_of_all_multiples(void)
 	}
 
 	printf("%d", sum);
+	_putchar(10);
 }
