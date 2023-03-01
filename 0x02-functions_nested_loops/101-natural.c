@@ -24,11 +24,7 @@ void sum_of_all_multiples(void)
 
 	for (i = 0; i < max; i++)
 	{
-		if ((i % 3 != 0) || (i % 5 != 0))
-		{
-			continue;
-		}
-		else
+		if ((i % 3 == 0) || (i % 5 == 0))
 		{
 			sum += i;
 		}
