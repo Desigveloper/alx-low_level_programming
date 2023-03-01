@@ -27,4 +27,6 @@ int add(int, int);
 void print_to_98(int);
 
 void print_times_table(int n);
+void _if_100s(int p100);
+void _if_10s(int p10);
 #endif
