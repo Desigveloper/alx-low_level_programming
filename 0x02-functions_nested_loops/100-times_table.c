@@ -4,8 +4,10 @@
  * print_times_table - Prints the multipliction table of a given a number
  * @n: parameter
  * @product: parameter
+ * @p10: parameter as product in 10s
+ * @p100: parameter as product in 100s
  * _if_100s - prints the outcome of at 100s
- *_if_10s -print the outcome at 10s
+ * _if_10s -print the outcome at 10s
 */
 
 void _if_100s(int);
@@ -46,18 +48,18 @@ void print_times_table(int n)
 			}
 
 		_putchar('\n');
-		
+
 		}
 	}
 }
 
-void _if_100s(int product)
+void _if_100s(int p100)
 {
 	int c1, c2, c3;
 
-	c1 = product / 100;
-	c2 = (product - 100) / 10;
-	c3 = product % 10;
+	c1 = p100 / 100;
+	c2 = (p100 - 100) / 10;
+	c3 = p100 % 10;
 
 	_putchar(',');
 	_putchar(' ');
@@ -67,12 +69,12 @@ void _if_100s(int product)
 }
 
 
-void _if_10s(int product)
+void _if_10s(int p10)
 {
 	int c1, c2;
 
-	c1 = product / 10;
-	c2 = product % 10;
+	c1 = p10 / 10;
+	c2 = p10 % 10;
 
 	_putchar(',');
 	_putchar(' ');
