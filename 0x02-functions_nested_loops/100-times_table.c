@@ -2,12 +2,15 @@
 
 /**
  * print_times_table - Prints the multipliction table of a given a number
+ *
+ * _if_100s - products of 100s
+ *
+ * _if_10s - products of 10s
+ *
  * @n: parameter
- * @product: parameter
- * @p10: parameter as product in 10s
- * @p100: parameter as product in 100s
- * _if_100s - prints the outcome of at 100s
- * _if_10s -print the outcome at 10s
+ * @int: parameter
+ * @p10: parameter
+ * @p100: parameter
 */
 
 void _if_100s(int);
