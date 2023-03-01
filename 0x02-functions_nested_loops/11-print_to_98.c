@@ -32,7 +32,7 @@ void print_to_98(int n)
 				printf("%d, ", n);
 			} else
 			{
-				print("%d", n);
+				printf("%d", n);
 			}
 			n++;
 		}
