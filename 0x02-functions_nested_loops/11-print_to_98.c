@@ -10,17 +10,15 @@ void print_to_98(int n)
 {
 	int cap_num = 98;
 
-	while(n != cap_num)
+	while (n != cap_num)
 	{
 		if (n > cap_num)
 		{
-			printf("%d", n);
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", n);
 			n--;
 		} else
 		{
-			printf("%d", n);
+			printf("%d, ", n);
 			_putchar(',');
 			_putchar(' ');
 			n++;
