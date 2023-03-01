@@ -26,8 +26,7 @@ void fibonacci(void)
 		{
 			if (i != 1)
 			{
-				_putchar(',');
-				_putchar(' ');
+				printf(", ");
 			}
 			printf("%d", i);
 		}
