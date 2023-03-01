@@ -3,7 +3,14 @@
 /**
  * print_times_table - Prints the multipliction table of a given a number
  * @n: parameter
+ * @product: parameter
+ * _if_100s - prints the outcome of at 100s
+ *_if_10s -print the outcome at 10s
 */
+
+void _if_100s(int);
+void _if_10s(int);
+
 
 void print_times_table(int n)
 {
@@ -18,32 +25,16 @@ void print_times_table(int n)
 				product = row * col;
 				if (product >= 100)
 				{
-					c1 = product / 100;
-					c2 = (product - 100) / 10;
-					c3 = product % 10;
-
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar('0' + c1);
-					_putchar('0' + c2);
-					_putchar('0' + c3);
+					_if_100s(product);
 				} else if (product >= 10)
 				{
-					c1 = (product) / 10;
-					c2 = (product) % 10;
-
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar('0' + c1);
-					_putchar('0' + c2);
-
+					_if_10s(product);
 				} else
 				{
 					if (col != 0)
 					{
 						_putchar(',');
+						_putchar(' ');
 						_putchar(' ');
 						_putchar(' ');
 					}
@@ -56,4 +47,30 @@ void print_times_table(int n)
 		_putchar('\n');
 
 	}
+}
+
+void _if_100s(int product)
+{
+	c1 = product / 100;
+	c2 = (product - 100) / 10;
+	c3 = product % 10;
+
+	_putchar(',');
+	_putchar(' ');
+	_putchar('0' + c1);
+	_putchar('0' + c2);
+	_putchar('0' + c3);
+}
+
+
+void _if_10s(int product)
+{
+	c2 = product / 10;
+	c3 = product % 10;
+
+	_putchar(',');
+	_putchar(' ');
+	_putchar(' ');
+	_putchar('0' + c1);
+	_putchar('0' + c2);
 }
