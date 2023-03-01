@@ -67,6 +67,8 @@ void _if_100s(int product)
 
 void _if_10s(int product)
 {
+	int c1, c2;
+
 	c1 = product / 10;
 	c2 = product % 10;
 
