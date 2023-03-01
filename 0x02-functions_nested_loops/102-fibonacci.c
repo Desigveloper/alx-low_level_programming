@@ -29,7 +29,7 @@ void fibonacci(void)
 				_putchar(',');
 				_putchar(' ');
 			}
-			printf("%d", i)
+			printf("%d", i);
 		}
 		else
 		{
