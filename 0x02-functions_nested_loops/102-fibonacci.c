@@ -18,8 +18,9 @@ int main(void)
 */
 void fibonacci(void)
 {
-	int i, upper = 50;
-	for (i = 1; i <= 50; i++)
+	int i, num, upper = 50;
+
+	for (i = 1; i <= upper; i++)
 	{
 		num = (i - 1) + (i - 2);
 		printf("%d\n", num);
