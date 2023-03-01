@@ -14,7 +14,7 @@ void _if_10s(int);
 
 void print_times_table(int n)
 {
-	int row, col,  c1, c2, c3, product;
+	int row, col, product;
 
 	for (row = 0; row <= n; row++)
 	{
@@ -51,6 +51,8 @@ void print_times_table(int n)
 
 void _if_100s(int product)
 {
+	int c1, c2, c3;
+
 	c1 = product / 100;
 	c2 = (product - 100) / 10;
 	c3 = product % 10;
@@ -65,8 +67,8 @@ void _if_100s(int product)
 
 void _if_10s(int product)
 {
-	c2 = product / 10;
-	c3 = product % 10;
+	c1 = product / 10;
+	c2 = product % 10;
 
 	_putchar(',');
 	_putchar(' ');
