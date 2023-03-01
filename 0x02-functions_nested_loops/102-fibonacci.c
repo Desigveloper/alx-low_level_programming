@@ -22,7 +22,21 @@ void fibonacci(void)
 
 	for (i = 1; i <= upper; i++)
 	{
-		num = (i - 1) + (i - 2);
-		printf("%d\n", num);
+		if (i <= 2)
+		{
+			if (i != 1)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			printf("%d", i)
+		}
+		else
+		{
+			num = (i - 1) + (i - 2);
+			printf(", %d", num);
+		}
+
 	}
+	_putchar('\n');
 }
