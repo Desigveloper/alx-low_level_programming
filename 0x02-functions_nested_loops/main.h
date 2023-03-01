@@ -31,4 +31,6 @@ void _if_100s(int p100);
 void _if_10s(int p10);
 
 void sum_of_all_multiples(void);
+
+void fibonacci(void);
 #endif
