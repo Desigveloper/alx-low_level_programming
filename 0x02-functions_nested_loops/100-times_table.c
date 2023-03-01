@@ -20,7 +20,10 @@ void print_times_table(int n)
 	{
 		for (col = 0; col <= n; col++)
 		{
-			if (n >= 0 && n <= 15)
+			if (n < 0 || n > 15)
+			{
+				break;
+			} else
 			{
 				product = row * col;
 				if (product >= 100)
