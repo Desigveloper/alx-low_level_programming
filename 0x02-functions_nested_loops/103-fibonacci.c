@@ -13,7 +13,7 @@ int main(void)
 }
 
 /**
- * finbonacci - prints fibonacci numbers less than 4000000
+ * fibonacci - prints fibonacci numbers less than 4000000
 */
 
 void fibonacci(void)
