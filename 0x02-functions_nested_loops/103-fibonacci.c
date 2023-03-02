@@ -12,7 +12,7 @@ int main(void)
 	return (0);
 }
 
-/** 
+/**
  * finbonacci - prints fibonacci numbers less than 4000000
 */
 
