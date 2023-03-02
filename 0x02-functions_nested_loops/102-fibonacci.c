@@ -14,7 +14,7 @@ int main(void)
 }
 
 /**
- * fibonacci - Prints the sum of preceeding 2 numbers of a number
+ * fibonacci - Prints the sum of preceeding 2 numbers upto 50
 */
 void fibonacci(void)
 {
@@ -35,5 +35,5 @@ void fibonacci(void)
 		}
 		i++;
 	}
-	_putchar('\n');
+	printf("\n");
 }
