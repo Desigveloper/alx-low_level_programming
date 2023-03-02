@@ -23,9 +23,9 @@ void fibonacci(void)
 
 	while (i <= upper)
 	{
-		if (i == min)
+		if (i == 1)
 			printf("%ld", min);
-		else if (i == max)
+		else if (i == 2)
 			printf(", %ld", max);
 		else
 		{
