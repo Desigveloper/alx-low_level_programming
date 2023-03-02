@@ -18,25 +18,21 @@ int main(void)
 */
 void fibonacci(void)
 {
-	int i, upper = 50;
+	int i = 1, upper = 50;
 	long min = 1, max = 2;
 
-	for (i = 1; i <= upper; i++)
+	while (i <= upper)
 	{
-		if (i <= max)
-		{
-			if (i != min)
-			{
-				printf(", ");
-			}
-			printf("%d", i);
-		}
+		if (i == min)
+			printf("%ld", min);
+		else if (i == max)
+			printf(", %ld", max);
 		else
 		{
-			max += (max - min);
-			printf(", %ld", max);
+			max += min;
+			min = max - min;
+			printf(", ld", max);
 		}
-
 	}
 	_putchar('\n');
 }
