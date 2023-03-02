@@ -4,7 +4,7 @@
  * main - Entry point
  * Return: Always returns 0
 */
-void fibonacci(vp)
+void fibonacci(void);
 
 int main(void)
 {
