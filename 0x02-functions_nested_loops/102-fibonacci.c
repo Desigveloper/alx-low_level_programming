@@ -18,13 +18,14 @@ int main(void)
 */
 void fibonacci(void)
 {
-	int i, num, upper = 50;
+	int i, upper = 50;
+	long min = 1, max = 2;
 
 	for (i = 1; i <= upper; i++)
 	{
-		if (i <= 2)
+		if (i <= max)
 		{
-			if (i != 1)
+			if (i != min)
 			{
 				printf(", ");
 			}
@@ -32,8 +33,9 @@ void fibonacci(void)
 		}
 		else
 		{
-			num += (i - 1) + (i - 2);
-			printf(", %d", num);
+			max += min;
+			min = max - min;
+			printf(", %d", max);
 		}
 
 	}
