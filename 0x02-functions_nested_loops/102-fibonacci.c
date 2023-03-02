@@ -35,7 +35,7 @@ void fibonacci(void)
 		{
 			max += min;
 			min = max - min;
-			printf(", %d", max);
+			printf(", %ld", max);
 		}
 
 	}
