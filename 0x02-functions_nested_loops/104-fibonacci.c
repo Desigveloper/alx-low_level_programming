@@ -1,14 +1,14 @@
 #include <stdio.h>
-#include "main.h"
+
 /**
  * main - finds and prints the first 98 Fibonacci numbers,
  * starting with 1 and 2 followed by a new line
- * Return: ALways 0 (Success)
+ * * Return: ALways 0 (Success)
  */
 
 int main(void)
 {
-	long int i, j, k, j0, j1, k0, k1;
+	unsigned long int i, j, k, j0, j1, k0, k1;
 
 	j = 1;
 	k = 2;
@@ -37,7 +37,7 @@ int main(void)
 		j1 = k1 - j1;
 	}
 
-	_putchar(10);
+	printf("\n");
 
 	return (0);
 }
