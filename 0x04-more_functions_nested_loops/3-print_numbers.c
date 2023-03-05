@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - prints all numbers 0 to 9
+ * print_numbers - prints numbers 0123456789
  * Return: void
 */
 
