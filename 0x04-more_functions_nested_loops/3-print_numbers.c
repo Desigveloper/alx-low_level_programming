@@ -7,11 +7,12 @@
 
 void print_numbers(void)
 {
-	int i;
+	int i = 48;
 
-	for (i = 48; i <= 57; i++)
+	fo(i <= 57)
 	{
 		_putchar(i);
+		i++;
 	}
 
 	_putchar(10); /* ACSII code for newline */
