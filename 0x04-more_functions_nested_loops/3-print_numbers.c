@@ -1,18 +1,16 @@
 #include "main.h"
 
 /**
- * print_numbers - Prints the numbers 0 to 9
- * followed by a new line
+ * print_numbers - Prints the numbers 0 to 9 followed by a new line
 */
 
 void print_numbers(void)
 {
-	int i = 48;
+	int c;
 
-	while(i <= 57)
+	for (c = 48; c <= 57; c++)
 	{
 		_putchar(i);
-		i++;
 	}
 
 	_putchar(10); /* ACSII code for newline */
