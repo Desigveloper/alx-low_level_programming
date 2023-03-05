@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - Prints the numbers 0 to 9 followed by a new line
+ * print_numbers - Prints all numbers 0 to 9
 */
 
 void print_numbers(void)
@@ -13,5 +13,5 @@ void print_numbers(void)
 		_putchar(c);
 	}
 
-	_putchar(10); /* ACSII code for newline */
+	_putchar(10);
 }
