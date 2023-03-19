@@ -4,13 +4,12 @@
  * return: Return the length of the string
  */
 #include "main.h"
-#include <string.h>
 
 int _strlen(char *s)
 {
 	int i = 0, len;
 
-	while (i != '\0')
+	while (*s[i] != '\0')
 	{
 		i++;
 	}
