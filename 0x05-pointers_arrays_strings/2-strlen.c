@@ -2,7 +2,7 @@
  * _strlen - prints the lenght of a giving string
  * @s: String param
  *
- * return: Returns the length of the string
+ * Return: returns the length of the string
  */
 #include "main.h"
 
