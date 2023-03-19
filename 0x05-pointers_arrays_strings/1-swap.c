@@ -1,7 +1,7 @@
 /**
  * swap_int - takes two integers and swap them
  * @a: pointer para 1
- * @pointer pare 2
+ * @b: pointer pare 2
  * returns: Returns nothing
  */
 
