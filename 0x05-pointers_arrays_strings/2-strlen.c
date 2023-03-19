@@ -4,6 +4,7 @@
  * return: Return the length of the string
  */
 #include "main.h"
+#include <string.h>
 
 int _strlen(char *s)
 {
