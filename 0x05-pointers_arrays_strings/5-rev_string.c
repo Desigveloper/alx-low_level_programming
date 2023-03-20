@@ -1,5 +1,5 @@
 /**
- * rev_strings - print the reverse of a string
+ * rev_string - print the reverse of a string
  * @s: param
  */
 
@@ -9,7 +9,7 @@ void rev_string(char *s)
 {
 	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; s[i] != 0; i++)
 	{
 	}
 
