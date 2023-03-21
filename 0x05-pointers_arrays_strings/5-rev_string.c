@@ -7,7 +7,7 @@
 
 void rev_string(char *s)
 {
-	int i = 0, length = 0, middle;
+	int i = 0, length = 0, mid;
 	char temp; /* temporary hold string */
 
 	mid = length / 2;
