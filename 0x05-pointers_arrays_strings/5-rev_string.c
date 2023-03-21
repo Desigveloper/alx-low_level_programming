@@ -10,13 +10,12 @@ void rev_string(char *s)
 	int mid, i = 0, len = 0;
 	char temp; /* temp - temporary hold string */
 
-	mid = len / 2;
-
 	while (s[i++])
 	{
 		len++;
 	}
 
+	mid  = len / 2 /* mid char of string */
 
 	for (i = len - 1; i >= mid; i--)
 	{
