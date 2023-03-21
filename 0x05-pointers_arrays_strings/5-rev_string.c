@@ -15,7 +15,7 @@ void rev_string(char *s)
 		len++;
 	}
 
-	mid  = len / 2 /* mid char of string */
+	mid  = len / 2; /* mid char of string */
 
 	for (i = len - 1; i >= mid; i--)
 	{
