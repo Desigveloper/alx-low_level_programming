@@ -7,10 +7,10 @@
 
 void puts_half(char *str)
 {
-	int mid,  i = 0, len = 0;
+	int mid, i = 0, len = 0;
 	char righthand;
 
-	for (;str[i] != '\0'; i++)
+	for (; str[i] != '\0'; i++)
 	{
 		len++;
 	}
@@ -19,7 +19,7 @@ void puts_half(char *str)
 	if (len % 2 == 0)
 		mid = len / 2;
 	else
-		mid = (len + 1) % 2;
+		mid = (len + 1) / 2;
 
 
 	for (i = mid; i < len; i++)
