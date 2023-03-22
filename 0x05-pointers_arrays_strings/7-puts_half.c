@@ -15,9 +15,14 @@ void puts_half(char *str)
 		len = i;
 	}
 
-	mid = len / 2;
+	/* Checking whether str is odd or even */
+	if (len % 2 == 0)
+		mid = len / 2;
+	else
+		mid = (len + 1) % 2;
 
-	for (i = mid, j = 0; i <= len; i++, j++)
+
+	for (i = mid, j = 0; i < len; i++, j++)
 	{
 		righthand = str[j];
 
