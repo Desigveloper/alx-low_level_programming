@@ -22,7 +22,7 @@ void puts_half(char *str)
 		mid = (len - 1) / 2;
 
 	/* prints the last part of string */
-	for (i = mid; i < len; i++)
+	for (i = mid; str[i] != '\0'; i++)
 	{
 		righthand = str[i];
 
