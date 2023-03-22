@@ -7,15 +7,19 @@
 
 int _atoi(char *s)
 {
-	int i = 0, num = 0, sign = 1, isi = 0;
+	int i = 0,
+	    num = 0,
+	    min = 1,
+	    isi = 0;
+
 
 	for (; s[i] != '\0'; i++)
 
 	{
 		if (s[i] == '-')
-			sign *= -1;
+			min *= -1;
 
-		for (; s[i] >= '0' && s[i] <= '9'; i++)
+		for (i = i; s[i] >= '0' && s[i] <= '9'; i++)
 		{
 			isi = 1;
 			num = num * 10 + (s[i] - '0');
@@ -28,6 +32,6 @@ int _atoi(char *s)
 
 	}
 
-	num *= sign;
+	num *= min;
 	return (num);
 }
