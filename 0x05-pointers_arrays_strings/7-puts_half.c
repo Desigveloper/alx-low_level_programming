@@ -22,7 +22,7 @@ void puts_half(char *str)
 		mid = (len + 1) % 2;
 
 
-	for (i = mid, j = 0; i < len; i++, j++)
+	for (i = mid; i < len; i++)
 	{
 		righthand = str[i];
 
