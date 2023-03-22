@@ -1,5 +1,5 @@
 /**
- * *_dtrcpy - copies the string pointed to one pointer to other
+ * *_strcpy - copies the string pointed to one pointer to other
  * @dest: recrive param
  * @src: source param
  */
@@ -14,7 +14,7 @@ char *_strcpy(char *dest, char *src)
 	{}
 
 
-	for (j = 0; (j < i && src[j] != '\0'); j++)
+	for (j = i; (j < i && src[j] != '\0'); j++)
 	{
 		dest[j] = src[j];
 	}
