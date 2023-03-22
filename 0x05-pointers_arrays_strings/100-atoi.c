@@ -1,7 +1,7 @@
 /**
  * _atoi - converts string to int
  * @s: param
- * Retrun: returns int or 0
+ * Return: returns int or 0
  */
 #include "main.h"
 
