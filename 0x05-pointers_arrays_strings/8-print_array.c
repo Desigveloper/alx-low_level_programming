@@ -1,6 +1,6 @@
 /**
  * print_array - prints array of integers
- * @a: param of int
+ * @a: pointer param to elements
  * @n: param, number of elements
  */
 
@@ -21,5 +21,5 @@ void print_array(int *a, int n)
 		}
 	}
 
-	_putchar('\n');
+	putchar('\n');
 }
