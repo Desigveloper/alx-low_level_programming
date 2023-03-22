@@ -24,7 +24,7 @@ void puts_half(char *str)
 
 	for (i = mid, j = 0; i < len; i++, j++)
 	{
-		righthand = str[j];
+		righthand = str[i];
 
 		_putchar(righthand);
 	}
