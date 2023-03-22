@@ -19,10 +19,10 @@ void puts_half(char *str)
 	if (len % 2 == 0)
 		mid = len / 2;
 	else
-		mid = (len - 1) / 2;
+		mid = (len + 1) / 2;
 
 	/* prints the last part of string */
-	for (i = mid; str[i] != '\0'; i++)
+	for (i = mid; i < len; i++)
 	{
 		righthand = str[i];
 
