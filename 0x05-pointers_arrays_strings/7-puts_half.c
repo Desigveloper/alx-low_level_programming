@@ -17,14 +17,11 @@ void puts_half(char *str)
 
 	mid = len / 2;
 
-	for (i = mid, j = 0; i <= len; i++; j++)
+	for (i = mid, j = 0; i <= len; i++, j++)
 	{
 		righthand = str[i];
-	}
 
-	for (k = 0; k righthand[k] != '\0'; k++)
-	{
-		_putchar(righthand[k]);
+		_putchar(righthand);
 	}
 
 	_putchar('\n');
