@@ -5,6 +5,7 @@
 
 #include <stdlib.h>
 #include <time.h>
+#include "main.h"
 
 void generate_password(void)
 {
