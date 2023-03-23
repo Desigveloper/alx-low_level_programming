@@ -1,6 +1,7 @@
 /**
  * generate_password - gerenates a random password of length N
- * Return: nothing
+ * main - enetry point of program
+ * Return: 0 success
  */
 
 #include <stdlib.h>
@@ -25,4 +26,11 @@ void generate_password(void)
 		printf("%c", list[rand() % (sizeof list -1)]);
 	}
 
+}
+
+int main(void)
+{
+	generate_password();
+
+	return (0);
 }
