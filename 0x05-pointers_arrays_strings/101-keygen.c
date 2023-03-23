@@ -18,7 +18,7 @@ void generate_password(int N)
 	/* List of character from which passwd is generated */
 	char numbers[] = "1234567890";
 	char lowercase[] = "abcdefghijklmnopqrstuvwxyz";
-	char symbols[] = " !@#$%^&_?*@€";
+	char symbols[] = "!@#$%^&_?*@€";
 	char UPPERCASE[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	/* seeds the random-number generator with
@@ -34,7 +34,7 @@ void generate_password(int N)
 		{
 			rand_num = rand() % 10;
 
-			passwrd[i] = numbers[rand_numb];
+			passwrd[i] = numbers[rand_num];
 		}
 		else if (rand_num == 1)
 		{
@@ -50,7 +50,7 @@ void generate_password(int N)
 		}
 		else
 		{
-			rand_num = rand() % 13;
+			rand_num = rand() % 12;
 
 			passwrd[i] = symbols[rand_num];
 		}
