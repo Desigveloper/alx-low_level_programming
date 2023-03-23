@@ -8,67 +8,36 @@
 #include <time.h> /* time() function librabry*/
 #include "main.h"
 
-void generate_password(int N)
+void generate_password(void)
 {
-	int i, rand_num,
-	    passwrd_len = N;
+	int i, j, sum = 0;
+	int passwd[100];
 
-	char passwrd[25];
-
-	/* List of character from which passwd is generated */
-	char numbers[] = "1234567890";
-	char lowercase[] = "abcdefghijklmnopqrstuvwxyz";
-	char symbols[] = "!@#$%^&_?*@€";
-	char UPPERCASE[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-	/* seeds the random-number generator with
-	 * current time so numbers will be different every time*/
+	 /* seeds the random-number generator with
+	  * * current time so numbers will be different every time */
 	srand((unsigned int) time(NULL));
 
-	/* Traverse over char array to store as finall output */
-	for (i = 0; i < passwrd_len; i++)
+	for (i = 0; i < 100; i++)
 	{
-		rand_num = rand() % 4;
+		passwd[i] = rand() % 78;
 
-		if (rand_num == 0)
+		sum += (passwd[i] + '0');
+		putchar(passwd[i] + '0');
+
+		if ((2772 - sum)- '0' < 78)
 		{
-			rand_num = rand() % 10;
-
-			passwrd[i] = numbers[rand_num];
-		}
-		else if (rand_num == 1)
-		{
-			rand_num = rand() % 26;
-
-			passwrd[i] = lowercase[rand_num];
-		}
-		else if (rand_num == 2)
-		{
-			rand_num = rand() % 26;
-
-			passwrd[i] = UPPERCASE[rand_num];
-		}
-		else
-		{
-			rand_num = rand() % 12;
-
-			passwrd[i] = symbols[rand_num];
+			j = 2772 - sum - '0';
+			sum += y;
+			putchar(y + '0');
+			break;
 		}
 	}
-
-	/* prints final output*/
-	for (i = 0; i < passwrd_len; i++)
-	{
-		printf("%c", passwrd[i]);
-	}
-
 }
 
 int main(void)
 {
-	int N = 25;
 
-	generate_password(N);
+	generate_password();
 
 	return (0);
 }
