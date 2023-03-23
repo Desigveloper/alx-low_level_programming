@@ -25,10 +25,10 @@ int _atoi(char *s)
 			num = num * 10 + (s[i] - '0');
 		}
 
-	if (isi == 1)
-	{
-		break;
-	}
+		if (isi == 1)
+		{
+			break;
+		}
 
 	}
 
