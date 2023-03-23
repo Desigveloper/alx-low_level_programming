@@ -27,8 +27,8 @@ void generate_password(void)
 		if ((2772 - sum)- '0' < 78)
 		{
 			j = 2772 - sum - '0';
-			sum += y;
-			putchar(y + '0');
+			sum += j;
+			putchar(j + '0');
 			break;
 		}
 	}
