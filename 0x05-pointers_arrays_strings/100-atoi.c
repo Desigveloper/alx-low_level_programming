@@ -13,7 +13,7 @@ int _atoi(char *s)
 	    isi = 0;
 
 
-	for (; s[i] != '\0'; i++)
+	while(s[i])
 
 	{
 		if (s[i] == '-')
@@ -29,6 +29,7 @@ int _atoi(char *s)
 		{
 			break;
 		}
+		i++;
 
 	}
 
