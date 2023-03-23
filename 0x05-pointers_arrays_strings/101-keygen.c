@@ -34,7 +34,7 @@ void generate_password(int N)
 		{
 			rand_num = rand() % 10;
 
-			passwrd[i] = numbers[rand_number]
+			passwrd[i] = numbers[rand_numb]
 		}
 		else if (rand_num == 1)
 		{
