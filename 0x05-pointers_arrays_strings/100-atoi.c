@@ -13,11 +13,12 @@ int _atoi(char *s)
 	    isi = 0;
 
 
-	while(s[i])
-
+	while (s[i])
 	{
-		if (s[i] == '-')
+		if (s[i] == 45)
+		{
 			min *= -1;
+		}
 
 		for (i = i; s[i] >= '0' && s[i] <= '9'; i++)
 		{
