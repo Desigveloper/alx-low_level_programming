@@ -2,7 +2,7 @@
  * *_strcat - concatenates two strings
  * @dest: destination param
  * @src: source param
- * Return: returns concatenated value in dest
+ * Return: returns concatenated string value in dest
  */
 
 #include "main.h"
