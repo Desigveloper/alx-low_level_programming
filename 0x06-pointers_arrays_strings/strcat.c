@@ -1,4 +1,5 @@
-/** *_strcat - concatenates two strings
+/**
+ * *_strcat - concatenates two strings
  * @dest: destination param
  * @src: source param
  * Return: returns concatenated value in dest
@@ -20,5 +21,5 @@ char *_strcat(char *dest, char *src)
 	for (i = 0; i <= src_len; i++)
 		dest[dest_len + i] = src[i];
 
-	return dest;
+	return (dest);
 }
