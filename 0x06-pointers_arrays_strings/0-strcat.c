@@ -19,7 +19,7 @@ char *_strcat(char *dest, char *src)
 		dlen++;
 	}
 
-	while(src[slen] != '\0')
+	while (src[slen] != '\0')
 	{
 		slen++;
 	}
