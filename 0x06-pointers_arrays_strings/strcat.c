@@ -4,7 +4,8 @@
  * @src: source param
  * Return: returns concatenated value in dest
  */
-#inlude "main.h"
+
+#include "main.h"
 
 char *_strcat(char *dest, char *src)
 {
