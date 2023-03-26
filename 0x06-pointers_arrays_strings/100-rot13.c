@@ -8,16 +8,16 @@
 
 char *rot13(char *str)
 {
-	int i = 0;
-	int j = 0;
+	int i;
+	int j;
 	char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (; *(str + i); i++)
+	for (i = 0; *(str + i); i++)
 	{
-		for (; j < 52; j++)
+		for (j = 0; j < 52; j++)
 		{
-			if (*(str + i) == input[j])
+			if (input[j] == *(str + i))
 			{
 				*(str + i) = output[j];
 				break;
