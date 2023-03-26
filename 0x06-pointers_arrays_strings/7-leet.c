@@ -1,5 +1,5 @@
 /**
- * leet: changes letters to numbers
+ * leet - changes letters to numbers
  * @str: string param
  * Return: the final letter-num string
  */
