@@ -1,5 +1,5 @@
 /**
- * void _print_rev_recursion - print the reverse of a strig
+ *  _print_rev_recursion - print the reverse of a strig
  * @s: string to be reversed
  * Returns: nothing
  */
