@@ -11,6 +11,7 @@ int _sqrt_recursion(int n);
 int find_root(int n, int x); /* Helper function sqrt */
 int is_prime_number(int n);
 int is_palindrome(char *s);
-char rev_str(char str); /* Helper function palindrome */
+int palidrome_checker(char *s, int x1, int x2); /* Helper function palindrome */
+int _strlen_recurse(char *str); /* Helper function palindrome */
 
 #endif /* MAIN_H */
