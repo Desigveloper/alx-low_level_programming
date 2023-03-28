@@ -8,7 +8,7 @@
  */
 int is_palindrome(char *s)
 {
-        return (palindrome_checker(s, 0, _strlen_recurse(s) - 1));
+	return (palindrome_checker(s, 0, _strlen_recurse(s) - 1));
 }
 
 
