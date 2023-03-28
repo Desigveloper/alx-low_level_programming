@@ -10,7 +10,7 @@ int is_palindrome(char *s)
 {
 	if (*s)
 	{
-		if (*s == rev_str(*s))
+		if (*s == rev_str(s))
 		{
 			return (1);
 			is_palindrome(s + 1);
