@@ -1,3 +1,9 @@
+/**
+ * is_prime_number - chcks if a inter is prime
+ * @n: integer to be checked
+ * Return: 1 if prime else 0
+ */
+
 #include "main.h"
 
 int is_prime_number(int n)
@@ -8,7 +14,8 @@ int is_prime_number(int n)
 	}
 	else
 	{
-		is_prime_number(n + 1);
 		return 1;
 	}
+
+	is_prime_number(n + 1);
 }
