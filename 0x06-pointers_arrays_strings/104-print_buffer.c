@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_line - prints a s bytes of a buffer
@@ -41,7 +40,7 @@ void print_line(char *c, int s, int l)
  *
  * Return: void
  */
-void print_number(char *b, int size)
+void print_buffer(char *b, int size)
 {
 	int i;
 
