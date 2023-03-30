@@ -1,7 +1,9 @@
 /**
  * main - entry point
  * @argc: argument counter
- * @argv: pointer string array
+ * @argv: pointer string arrayi
+ *
+ * Retuen: 0 (success)
  */
 
 #include "main.h"
