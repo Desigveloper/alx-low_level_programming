@@ -6,5 +6,5 @@
 #include <ctype.h>
 
 int main(int argc, char* argv[]);
-_putchar(char c);
+int _putchar(char c);
 #endif /* MAIN_H */
