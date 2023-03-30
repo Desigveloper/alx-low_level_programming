@@ -3,7 +3,7 @@
  * @argc: argument counter
  * @argv: array of pointer to strings
  *
- * Return: 0
+ * Return: 0 (success)
  */
 
 #include "main.h"
@@ -12,6 +12,5 @@ int main(int argc, char *argv[] __attribute__((unused)))
 {
 	printf("%d\n", argc - 1);
 
-	return 0;
-
+	return (0);
 }
