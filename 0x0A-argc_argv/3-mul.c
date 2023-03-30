@@ -14,10 +14,11 @@ int main(int argc, char argv[])
 	if (argc != 3)
 	{
 		puts("Error");
+		return (1);
 	}
 	else
 	{
-		product = argv[1] * argv[2];
+		product = atoi(argv[1]) * (argv[2]);
 		printf("%ld\n", product);
 	}
 
