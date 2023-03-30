@@ -8,7 +8,7 @@
 
 #include "main.h"
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
 	int i;
 	int counter = 0;
