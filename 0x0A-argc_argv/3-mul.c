@@ -8,7 +8,7 @@
 
 int main(int argc, char argv[])
 {
-       int product;
+       int product = 0;
 
 	if (argc != 3)
 	{
