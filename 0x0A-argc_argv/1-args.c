@@ -10,15 +10,7 @@
 
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-	int i;
-	int counter = 0;
-
-	for(i = 0; i < argc; i++)
-	{
-		counter++;
-	}
-
-	printf("%d\n", counter);
+	printf("%d\n", argc - 1);
 
 	return 0;
 
