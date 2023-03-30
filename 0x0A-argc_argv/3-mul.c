@@ -18,7 +18,7 @@ int main(int argc, char argv[])
 	else
 	{
 		product = atoi(argv[1]) * atoi(argv[2]);
-		printf("%ld\n", product);
+		printf("%d\n", product);
 	}
 
 	return (0);
