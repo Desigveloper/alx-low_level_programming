@@ -3,7 +3,7 @@
  * @argc: argument counter
  * @argv: pointer string arrayi
  *
- * Return: 0 (success)
+ * Return: 1 if error or 0 (success)
  */
 
 #include "main.h"
