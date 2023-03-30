@@ -10,10 +10,12 @@
 
 int main(int argc, char *argv[])
 {
-	int counter;
-	for(counter = 0; counter < argc; counter++)
+	int i;
+	int counter = 0;
+
+	for(i = 0; i < argc; i++)
 	{
-		;
+		count++;
 	}
 
 	printf("%d\n", counter);
