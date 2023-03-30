@@ -6,13 +6,13 @@
 
 #include "main.h"
 
-int main(int argc, char argv[])
+int main(int argc, char *argv[])
 {
        int product = 0;
 
 	if (argc != 3)
 	{
-		puts("Error");
+		printf("Error");
 		return (1);
 	}
 	else
