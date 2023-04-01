@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * strtow -  splits a string into words
+ * strtow - splits a string into words
  *
- * @str: string to splear
+ * @str: string to split
  *
  * Return:  pointer to an array of strings (words)
  */
@@ -51,8 +51,8 @@ char **strtow(char *str)
 }
 
 /**
- * wordscount - counts the number of words in a string
- * @s: string to count
+ * words_count - counts the number of words in a string
+ * @str: string to count
  *
  * Return: int of number of words
  */
