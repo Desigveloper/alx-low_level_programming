@@ -83,7 +83,7 @@ int words_count(char *str)
 		else if (i == 0)
 			n2++;
 
-		n2++;
+		i++;
 	}
 
 	n2++;
