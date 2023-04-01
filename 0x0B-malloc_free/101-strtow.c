@@ -17,7 +17,8 @@ char **strtow(char *str)
 	if (n1 == 1)
 		return (NULL);
 
-	q = (char **)malloc(n1 * sizeof(char *)); if (q == NULL)
+	q = (char **)malloc(n1 * sizeof(char *));
+	if (q == NULL)
 		return (NULL);
 	q[n1 - 1] = NULL;
 	while (str[i])
