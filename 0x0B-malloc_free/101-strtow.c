@@ -16,11 +16,8 @@ char **strtow(char *str)
 	n1 = words_count(str);
 	if (n1 == 1)
 		return (NULL);
-
-	q = (char **)malloc(n1 * sizeof(char *));
-	if (q == NULL)
+	q = (char **)malloc(n1 * sizeof(char *)); if (q == NULL)
 		return (NULL);
-
 	q[n1 - 1] = NULL;
 	i = 0;
 	while (str[i])
