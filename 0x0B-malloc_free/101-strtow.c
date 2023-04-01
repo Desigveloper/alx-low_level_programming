@@ -8,7 +8,7 @@
  */
 char **strtow(char *str)
 {
-	int i, j, k, l, n1 = 0, qa = 0;
+	int i = 0, j, k, l, n1 = 0, qa = 0;
 	char **q;
 
 	if (str == NULL || *str == '\0')
@@ -16,10 +16,10 @@ char **strtow(char *str)
 	n1 = words_count(str);
 	if (n1 == 1)
 		return (NULL);
+
 	q = (char **)malloc(n1 * sizeof(char *)); if (q == NULL)
 		return (NULL);
 	q[n1 - 1] = NULL;
-	i = 0;
 	while (str[i])
 	{
 		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
