@@ -32,13 +32,13 @@ char *str_concat(char *s1, char *s2)
 
 
 	x = i + j + 1;
-	ch = malloc(q * sizeof(char));
+	ch = malloc(x * sizeof(char));
 
 	if (ch == NULL)
 		return (NULL);
 
 	for (y = 0; y < i; ++y)
-		s[y] = s1[y];
+		ch[y] = s1[y];
 
 	for  (y = 0; y < j; ++y)
 		ch[y + i] = s2[y];
