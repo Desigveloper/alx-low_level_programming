@@ -1,7 +1,7 @@
+/* mul.c  multiplies two positive numbers. */
 #include "main.h"
 
 /**
- * 101-mul.c:  multiply two numbers
  * main - Entry point
  * @argc: number of arguments
  * @argv: argument vector
