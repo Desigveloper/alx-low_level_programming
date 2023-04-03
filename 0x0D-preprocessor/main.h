@@ -2,7 +2,7 @@
 #define MAIN_H
 
 int _putchar(char c);
-#include <stdio.h>
+#include <stdio.h>:wq
 #include "object_like_macro.h"
 #include "pi"
 
