@@ -75,11 +75,11 @@ char *_strcpy(char *d, char *s)
 
 	while (j < len)
 	{
-		*(d + j) = *(s + j);
+		d[j] = s[j];
 		j++;
 	}
 
-	*(d + j) = '\0';
+	d[j] = '\0';
 
 	return (d);
 }
