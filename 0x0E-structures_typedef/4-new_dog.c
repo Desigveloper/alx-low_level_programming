@@ -47,7 +47,7 @@ dog_t *new_dog(char *name, float age, char *owner)
  * Return: length od string
  */
 
-unsigned int _strcpy(char *str);
+int _strcpy(char *str);
 {
 	int i;
 

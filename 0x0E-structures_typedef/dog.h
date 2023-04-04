@@ -21,7 +21,7 @@ struct dog
 /* Prototypes*/
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-unsigned int _strcpy(char *str);
+int _strcpy(char *str);
 char *_strcpy(char *d, char *s);
 
 /* New type of struct dog */
