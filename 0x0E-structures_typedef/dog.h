@@ -17,14 +17,14 @@ struct dog
 			char *owner;
 		};
 
-/* Prototypes*/
-void init_dog(struct dog *d, char *name, float age, char *owner);
-void print_dog(struct dog *d);
-int _strcpy(char *str);
-char *_strcpy(char *d, char *s);
-
 /* New type of struct dog */
 typedef struct dog dog_t;
 
+/* Prototypes*/
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
+int _strcpy(char *str);
+char *_strcpy(char *d, char *s);
+
 #endif
