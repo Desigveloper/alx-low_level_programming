@@ -3,17 +3,15 @@
 
 /**
  * main - prints its own opcodes
- * @argc: number of args
- * @argv: array of args
+ * @argc: number of arguments
+ * @argv: array of arguments
  *
  * Return: Always 0 (Success)
  */
-
-
 int main(int argc, char *argv[])
 {
 	int bytes, i;
-	char *array;
+	char *arr;
 
 	if (argc != 2)
 	{
@@ -35,11 +33,10 @@ int main(int argc, char *argv[])
 	{
 		if (i == bytes - 1)
 		{
-			printf("%02hhx\n", array[i]);
+			printf("%02hhx\n", arr[i]);
 			break;
 		}
-		printf("%02hhx ", array[i]);
+		printf("%02hhx ", arr[i]);
 	}
-
 	return (0);
 }
