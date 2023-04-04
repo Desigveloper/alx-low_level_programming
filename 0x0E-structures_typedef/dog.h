@@ -3,6 +3,7 @@
 
 /* clang standard libraries */
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct dog - define a dog basic info

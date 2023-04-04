@@ -1,5 +1,4 @@
 #include "dog.h"
-#include <stdlib.h>
 
 /**
  * new_dog - creates a new dog
@@ -43,7 +42,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 }
 
 /**
- * _strcpy - returns length of string
+ * _strlen - returns length of string
  * @str: the string to evaluate
  *
  * Return: length od string
