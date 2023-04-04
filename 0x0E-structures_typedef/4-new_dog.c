@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdlib.h>
+
 /**
  * new_dog - creates a new dog
  * @name: pointer to char array
@@ -52,7 +52,7 @@ int _strcpy(char *str)
 {
 	int i = 0;
 
-	while (*(str + i) != '\0')
+	while (str[i] != '\0')
 		i++;
 
 	return (i);
@@ -71,7 +71,7 @@ char *_strcpy(char *d, char *s)
 {
 	int len = 0, j;
 
-	while (*(s + len) != '\0')
+	while (s[len] != '\0')
 		len++;
 
 	for (j = 0; j < len; j++)
