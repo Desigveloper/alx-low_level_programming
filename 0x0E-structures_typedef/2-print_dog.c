@@ -1,3 +1,5 @@
+#include "dog.h"
+
 /**
  * print_dog - prints dog's attributes
  * @d: pointer to struct
