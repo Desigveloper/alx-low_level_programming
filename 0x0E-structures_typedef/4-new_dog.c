@@ -8,7 +8,7 @@
  * Return:  pointer to new dog or NULL if failure
  */
 
-dog_t *new_dog(char *name, float age, char *owner);
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	unsigned int i =  dn =  od = 0;
 	dog_t *dog;
