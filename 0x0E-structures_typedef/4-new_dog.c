@@ -49,11 +49,11 @@ dog_t *new_dog(char *name, float age, char *owner)
  * Return: length od string
  */
 
-int _strcpy(char *str)
+int _strlen(char *str)
 {
 	int i = 0;
 
-	while (str[i] != '\0')
+	while (*(str + i) != '\0')
 	{
 		i++;
 	}
@@ -74,17 +74,17 @@ char *_strcpy(char *d, char *s)
 {
 	int len = 0, j;
 
-	while (s[len] != '\0')
+	while (*(s + len) != '\0')
 	{
 		len++;
 	}
 
 	for (j = 0; j < len; j++)
 	{
-		d[j] = s[j];
+		*(d + j) = *(s + j);
 	}
 
-	d[j] = '\0';
+	*(d + j) = '\0';
 
 	return (d);
 }
