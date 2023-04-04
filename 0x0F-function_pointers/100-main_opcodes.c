@@ -41,5 +41,5 @@ int main(int argc, char *argv[])
 		printf("%02hhx ", array[i]);
 	}
 
-		return (0);
+	return (0);
 }
