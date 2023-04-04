@@ -10,8 +10,8 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	unsigned int len_n = _strlen(name);
-	unsigned int len_o = _strlen(owner);
+	int len_n = _strlen(name);
+	int len_o = _strlen(owner);
 	dog_t *dog;
 
 	dog = malloc(sizeof(dog_t));
@@ -49,10 +49,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 int _strcpy(char *str)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; str[i] != '\0'; i++)
-		;
+	while (*(str + i) != '\0')
+		i++;
 
 	return (i);
 }
@@ -68,15 +68,14 @@ int _strcpy(char *str)
 
 char *_strcpy(char *d, char *s)
 {
-	int len, j = 0;
+	int len = 0, j;
 
-	for (len = 0; s[len] != '\0'; len++)
-		;
+	while (*(s + len) != '\0')
+		len++;
 
-	while (j < len)
+	for (j = 0; j < len; j++)
 	{
 		d[j] = s[j];
-		j++;
 	}
 
 	d[j] = '\0';
