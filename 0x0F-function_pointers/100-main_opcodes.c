@@ -8,9 +8,13 @@
  *
  * Return: Always 0 (Success)
  */
+
+void print_code(int argc, argv[]);
+
+
 int main(int argc, char *argv[])
 {
-	print_code(argc, *argv);
+	print_code(argc, argv);
 	return (0);
 }
 
