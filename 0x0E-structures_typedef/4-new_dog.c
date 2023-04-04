@@ -70,7 +70,7 @@ char *_strcpy(char *d, char *s)
 {
 	int len, j = 0;
 
-	for (len = 0; s(len) != '\0'; len++)
+	for (len = 0; s[len] != '\0'; len++)
 		;
 
 	while (j < len)
