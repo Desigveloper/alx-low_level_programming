@@ -24,8 +24,8 @@ int (*get_op_func(char *s))(int, int)
 
 	for (i = 0; (ops[i].op); i++)
 	{
-		if (strcmp(*(ops + i).op, s) == 0)
-			return (*(ops + i).f);
+		if (strcmp(ops[i].op, s) == 0)
+			return (ops[i].f);
 	}
 
 	return (NULL);
