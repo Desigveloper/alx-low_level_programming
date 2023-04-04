@@ -9,7 +9,7 @@
  * Return: Always 0 (Success)
  */
 
-void print_code(int argc, argv[]);
+void print_code(int argc, *argv[]);
 
 
 int main(int argc, char *argv[])
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	return (0);
 }
 
-void print_code(int argc, argv[])
+void print_code(int argc, *argv[])
 {
 	int bytes, i;
 	char *arr;
