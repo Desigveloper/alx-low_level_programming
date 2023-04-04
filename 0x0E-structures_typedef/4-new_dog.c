@@ -10,55 +10,73 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	unsigned int i = 0,  dn =  0, od;
+	unsigned int len_n = _strlen(name);
+	unsigned int len_o = _strlen(owner);
 	dog_t *dog;
 
-	if (name == NULL || owner == NULL)
-		return (NULL);
-
 	dog = malloc(sizeof(dog_t));
-
 	if (dog == NULL)
 		return (NULL);
 
-	while (*(name + dn))
-	{
-		dn++;
-	}
-	
-	dn++;
-	dog->name  = malloc(sizeof(char) * dn);
-
+	dog->name = malloc((len_n + 1) * sizeof(char));
 	if (dog->name == NULL)
 	{
 		free(dog);
 		return (NULL);
 	}
 
-	while (i < dn)
-	{
-		dog->*(name + i) = *(name + i);
-		i++;
-	}
-
-	dog->age = age;
-
-	for ( od = 0; owner; od++)
-		;
-	od++;
-	dog->owner = malloc(sizeof(char) * od);
+	dog->owner = malloc((len_o + 1) * sizeof(char));
 	if (dog->owner == NULL)
 	{
-		free(dog->name);
 		free(dog);
-		return(NULL);
-	}
-	i = 0;
-	while (i < od)
-	{
-		dog->*(owner + i) = *(owner + i);
-		i++;
+		free(dog->name);
+		return (NULL);
 	}
 
-	return (owner);
+	_strcpy(dog->name, name);
+	_strcpy(dog->name, name);
+	dog->age = age;
+
+	return (dog);
+}
+
+/**
+ * _strcpy - returns length of string
+ * @str: the string to evaluate
+ *
+ * Return: length od string
+ */
+
+unsigned int _strcpy(char *str);
+{
+	int i;
+
+	for (i = 0; str[i] != 0; i++)
+		;
+
+	return (i);
+}
+
+/**
+ * _strcpy - copies the string with null byte ('\0') from source poited by s
+ * to buffer pointed by d (destination)
+ * @s: str to be copied
+ * @d: Pointer to buffer where str will be pasted
+ *
+ * Return: destination pointer
+ */
+
+char *_strcpy(char *d, char *s)
+{
+	int len, j = 0;
+
+	for (len = 0; s(len) != 0; len++)
+		;
+
+	while (j < len)
+		*(d + j) = *(s + j);
+
+	*(d + j) = '\0';
+
+	return (d);
 }
