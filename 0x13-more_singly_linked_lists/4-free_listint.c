@@ -9,7 +9,7 @@ void free_listint(listint_t *head)
 {
 	list_t *tmp;
 
-	while (head != NULL)
+	while (head != 0)
 	{
 		tmp = head->next;
 		free(head);
