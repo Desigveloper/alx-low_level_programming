@@ -4,6 +4,8 @@
  * add_node - adds new node at the beginning of list_t
  * @head: double point to list_t
  * @str: string to be added
+ *
+ * Return: address of node or NULL otherwise
  */
 list_t *add_node(list_t **head, const char *str)
 {
@@ -15,7 +17,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	new_node = malloc(sizeof(list_t));
 
-	if (!new_node)
+	if (new_node == NULL)
 		return (NULL);
 
 	new_node->str = strdup(str);
