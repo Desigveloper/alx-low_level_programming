@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_node - adds new node at the end of list_t
+ * add_node_end - adds new node at the end of list_t
  * @head: double point to list_t
  * @str: string to be added
  *
@@ -26,7 +26,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	new_node->len = len;
 	new_node->next = NULL;
 
-	if (!head)
+	if (!(*head))
 	{
 		*head = new_node;
 		return (new_node);
