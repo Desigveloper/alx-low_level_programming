@@ -2,7 +2,7 @@
  * _strlen_recursion - prints the length of string recursively
  * @s: param pointer to the string to be printed
  *
- * Return: none if success
+ * Return: 0 or length of str if success
  */
 
 #include "main.h"

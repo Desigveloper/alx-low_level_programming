@@ -13,6 +13,13 @@ Once all the characters have been printed in reverse order, the function returns
 
 2-strlen-recursion.c: A function that prints the length of a string recursively.
 The _strlen_recursion function takes a character pointer s as an argument.
-Checks if the current character is the null character, which marks the end of the string.
-If it is, the function returns 0. Otherwise, it makes a recursive call with the next character in the string and adds 1 to the result.
+Checks if the current character is the null character, which marks the end of the string, then the returns 0.
+Otherwise, it makes a recursive call with the next character in the string and adds 1 to the result.
 Once all the characters have been counted, the function returns the final length.
+
+3-factorial - returns the factorial of a given number recursively.
+The factorial function takes an integer n as an argument.
+It first checks if n is less than 0, then returns -1 to indicate an error.
+If n is equal to 0, the function returns 1, since 0! = 1.
+Otherwise, the function makes a recursive call to factorial with n - 1 until the base case is reached.
+the accumulated factorial value is then returned.
