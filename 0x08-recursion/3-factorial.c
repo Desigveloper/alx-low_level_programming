@@ -15,6 +15,6 @@ int factorial(int n)
 		return (1);
 
 	iFactorial += factorial(n - 1);
-	
+
 	return (iFactorial);
 }
