@@ -10,3 +10,9 @@ The _print_rev-recursion function takes a character pointer s as an argument.
 It then checks if the current character is the null character, which marks the end of the string.
 If it is, the function returns. Otherwise, it makes a recursive call with the next character in the string.
 Once all the characters have been printed in reverse order, the function returns
+
+2-strlen-recursion.c: A function that prints the length of a string recursively.
+The _strlen_recursion function takes a character pointer s as an argument.
+Checks if the current character is the null character, which marks the end of the string.
+If it is, the function returns 0. Otherwise, it makes a recursive call with the next character in the string and adds 1 to the result.
+Once all the characters have been counted, the function returns the final length.
