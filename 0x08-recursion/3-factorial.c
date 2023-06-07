@@ -7,14 +7,11 @@
 
 int factorial(int n)
 {
-	int iFactorial = 0;
 
 	if (n < 0) /* error case */
 		return (-1);
 	else if (n == 0) /* base case*/
 		return (1);
 
-	iFactorial *= factorial(n - 1);
-
-	return (iFactorial);
+	return n *  factorial(n - 1);
 }
