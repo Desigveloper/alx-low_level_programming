@@ -26,10 +26,10 @@ int _sqrt_recursion(int n)
 
 /**
  * sqrt_helper_func - a recursive helper function that takes three arguments
- * @iNum: param1, an integer
+ * @iNum: param1, an integer for which square root is to be calculated
  * @iRoot: param2, root of the number
  *
- * Return: n or the dermined value aftersearch
+ * Return: The square root of the given integer, or -1 if the integer is negative.
  */
 
 int sqrt_helper_func(int iNum, int iRoot)
@@ -40,13 +40,12 @@ int sqrt_helper_func(int iNum, int iRoot)
 	{
 		return (iRoot);
 	}
-	else if (iMid * iMid > iNum) /* search in the lower half */
+	else if (iRoot * iRoot  > iNum) /* search in the lower half */
 	{
 		return (-1);
 	}
 	else /* search in the upper half */
 	{
-		return (sqrt_helper_func(iNum, iMid + 1));
+		return (sqrt_helper_func(iNum, iRoot + 1));
 	}
 }
-
