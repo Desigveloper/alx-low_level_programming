@@ -34,12 +34,14 @@ int _sqrt_recursion(int n)
 int sqrt_helper_func(int iNum, int iStart, int iEnd)
 
 {
+	int iMid;
+
 	if (iStart > iEnd)
 	{
 		return (iEnd);
 	}
 
-	int iMid = (iStart + iEnd) / 2;
+	iMid = (iStart + iEnd) / 2;
 
 	if (iMid * iMid == iNum) /* found the sqrt */
 	{
