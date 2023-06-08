@@ -8,12 +8,11 @@
 
 int is_prime_number(int n)
 {
-	_putchar('\n');
 	return (is_prime_helper_func(n, n / 2));
 }
 
 /**
- * is_prime_number - takes two integers as input, a numbera and a counter
+ * is_prime_helper_func - takes two integers as input, a numbera and a counter
  * @iNum: integer to be divided
  * @iCounter: param2, counter for iteration
  * Return: 1 if the input integer is a prime number, otherwise return 0.
