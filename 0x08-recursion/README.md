@@ -30,3 +30,13 @@ It follows the formula x^y, where, x and y are integers representing the base an
 If y is negative, the function returns -1 to indicate an error.
 If y is zero, the function returns 1.
 Otherwise, the function returns the result of x raised to the power of y.
+
+5-sqrt-recursion: A function that recursively calculates and returns the natural square root of a number.
+The function takes an integer n as input and returns its natural square root.
+If n is negative, the function returns -1. 
+If n does not have a natural square root, it returns the largest integer whose square is less than or equal to n.
+
+The sqrt-helper-func: Is a recursive helper function that takes three arguments: 
+the integer iNum, the starting point iStart, and the ending point iEnd. 
+It uses binary search to find the square root of iNum by recursively dividing the range between start and end 
+in half until it finds the square root or determines that it doesn't exist.
