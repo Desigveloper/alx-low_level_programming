@@ -13,7 +13,7 @@ int is_prime_number(int n)
 
 int is_prime_helper_func(int iNum, int iCounter)
 {
-	if (Inum <= 1)
+	if (iNum <= 1)
 		return (0);
 
 	if (iCounter == 1)
