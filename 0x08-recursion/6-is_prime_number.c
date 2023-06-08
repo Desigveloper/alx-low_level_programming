@@ -8,7 +8,7 @@
 
 int is_prime_number(int n)
 {
-	return (is_prime_helper_func(n, n/2));
+	return (is_prime_helper_func(n, n / 2));
 }
 
 int is_prime_helper_func(int iNum, int iCounter)
@@ -22,6 +22,7 @@ int is_prime_helper_func(int iNum, int iCounter)
 	if (iNum % iCounter == 0)
 		return (0);
 
+	_putchar('\n');
 	return (is_prime_helper_func(iNum, iNum - 1));
 
 }
