@@ -51,7 +51,7 @@ int sqrt_helper_func(int iNum, int iStart, int iEnd)
 	}
 	else if (iMid * iMid > iNum) /* search in the lower half */
 	{
-		return (sqrt_helper_func(iNum, iStart, iMid - 1));
+		return (-1);
 	}
 	else /* search in the upper half */
 	{
