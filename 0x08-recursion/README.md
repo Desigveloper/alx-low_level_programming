@@ -38,5 +38,5 @@ If n does not have a natural square root, it returns the largest integer whose s
 
 The sqrt-helper-func: Is a recursive helper function that takes three arguments: 
 the integer iNum, the starting point iStart, and the ending point iEnd. 
-It uses binary search to find the square root of iNum by recursively dividing the range between start and end 
-in half until it finds the square root or determines that it doesn't exist.
+It uses binary search to find the square root of iNum by recursively
+until it finds the square root or determines that it doesn't exist.

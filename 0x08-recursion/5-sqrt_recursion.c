@@ -1,5 +1,5 @@
 /**
- * _sqrt_recursion - Takes an int n and returns its natural sqrt using recursion
+ * _sqrt_recursion - Takes an int n and returns its natural sqrt recursively
  * @n: param,  an integer representing number to be checked
  *
  * Return: value of n , or -1 as an error
@@ -29,7 +29,7 @@ int _sqrt_recursion(int n)
  * @iNum: param1, an integer for which square root is to be calculated
  * @iRoot: param2, root of the number
  *
- * Return: The square root of the given integer, or -1 if the integer is negative.
+ * Return: The square root of the given int, or -1 if the integer is negative.
  */
 
 int sqrt_helper_func(int iNum, int iRoot)
