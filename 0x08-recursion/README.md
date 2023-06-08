@@ -23,3 +23,10 @@ It first checks if n is less than 0, then returns -1 to indicate an error.
 If n is equal to 0, the function returns 1, since 0! = 1.
 Otherwise, the function makes a recursive call to factorial with n - 1 until the base case is reached.
 the accumulated factorial value is then returned.
+
+4-pow-recursion: A function that calculates the value of x power y recursively.
+This function recursively calculates the power of a number x raised to the yth power.
+It follows the formula x^y, where, x and y are integers representing the base and exponent respectively.
+If y is negative, the function returns -1 to indicate an error.
+If y is zero, the function returns 1.
+Otherwise, the function returns the result of x raised to the power of y.
