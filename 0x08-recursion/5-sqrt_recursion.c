@@ -9,50 +9,16 @@
 
 int _sqrt_recursion(int n)
 {
-	if (n < 0) /* error case */
-	{
-		return (-1);
-	}
-
-	if (n == 0 || n == 1) /* base case */
-	{
-		return (n);
-	}
-
-	return (sqrt_helper_func(n, 1, n)); /* recursive call */
-}
-
-/**
- * sqrt_helper_func - a recursive helper function that takes three arguments
- * @iNum: param1, an integer
- * @iStart: param2, the starting point
- * @iEnd: param3: the ending point.
- *
- * Return: n or the dermined value aftersearch
- */
-
-int sqrt_helper_func(int iNum, int iStart, int iEnd)
-
-{
-	int iMid;
-
-	if (iStart > iEnd)
-	{
-		return (iEnd);
-	}
-
-	iMid = (iStart + iEnd) / 2;
-
-	if (iMid * iMid == iNum) /* found the sqrt */
-	{
-		return (iMid);
-	}
-	else if (iMid * iMid > iNum) /* search in the lower half */
-	{
-		return (sqrt_helper_func(iNum, iStart, iMid - 1));
-	}
-	else /* search in the upper half */
-	{
-		return (sqrt_helper_func(iNum, iMid + 1, iEnd));
-	}
+    if (n < 0) {
+        return -1;
+    }
+    if (n == 0 || n == 1) {
+        return n;
+    }
+    int i = 1, result = 1;
+    while (result <= n) {
+        i++;
+        result = i * i;
+    }
+    return _sqrt_recursion(n - (i - 1)) + (i - 1);
 }
