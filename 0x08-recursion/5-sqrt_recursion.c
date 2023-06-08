@@ -53,4 +53,4 @@ int sqrt_helper_func(int iNum, int iStart, int iEnd)
 	{
 		return (sqrt_helper_func(iNum, iMid + 1, iEnd));
 	}
-i}
+}
