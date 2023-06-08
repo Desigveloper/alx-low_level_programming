@@ -13,4 +13,6 @@ int _sqrt_recursion(int n);
 int sqrt_helper_func(int iNum, int iRoot);
 int is_prime_number(int n);
 int is_prime_helper_func(int iNum, int iCounter);
+int is_palindrome(char *s);
+int palindrome_helper_func(char *s, int cLen, int i);
 #endif /*MAIN_H*/
