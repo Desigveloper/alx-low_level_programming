@@ -19,7 +19,7 @@ int _sqrt_recursion(int n)
 		return (n);
 	}
 
-	return (sqrt_helper_func(n, n - 1, n)); /* recursive call */
+	return (sqrt_helper_func(n, 1, n)); /* recursive call */
 }
 
 /**
