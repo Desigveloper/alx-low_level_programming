@@ -19,7 +19,7 @@ int is_prime_helper_func(int iNum, int iCounter)
 	if (iCounter == 1)
 		return (1);
 
-	if (int iNum % iCounter == 0)
+	if (iNum % iCounter == 0)
 		return (0);
 
 	return (is_prime_helper_func(iNum, iNum - 1));
