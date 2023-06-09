@@ -18,7 +18,7 @@ int is_palindrome(char *s)
 		return (0);
 	
 	_putchar(*s);
-	return(palindrome_helper_func(s, cLen, 1));
+	return(palindrome_helper_func(s, 0, cLen - 1));
 
 }
 
