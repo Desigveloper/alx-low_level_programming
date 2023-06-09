@@ -9,9 +9,7 @@
 
 int is_palindrome(char *s)
 {
-	int cLen = *s;
-
-	print_str_len(s);
+	int cLen = print_str_len(s);
 
 	if (cLen <= 1)
 		return (1);
