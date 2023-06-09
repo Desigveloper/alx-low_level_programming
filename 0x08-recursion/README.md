@@ -47,14 +47,14 @@ If the input integer is a prime number, the function returns 1. Otherwise, it re
 is-prime-helper-func: takes two integers as input, iNum as a number and iCounter as counter,
 and returns whether the number is prime or not. 1 if the input integer is a prime number otherwise, 0
 
-100-is-palindrome.c: The function takes a pointer to a string s including an empty string.
-The function works by comparing the first and last characters of the string.
-If they match, the function prints the first character using putchar, recursively calls a helper function 
-with the substring that excludes the first and last characters, and returns the result.
+100-is-palindrome.c: The function takes a given  string s including an empty string and checke
+if is a palindrome using recursion. Returns 1 if it is a palindrome and 0 otherwise.
 
-The helper function compares the characters at opposite ends of the substring, moving inward until the middle is reached. 
-If any pair of characters does not match, the helper function immediately returns 0.
-If all pairs match, the helper function prints the next character using putchar, by recursively calls itself 
-with the substring that excludes the outermost characters, and returns the result.
-If the length of the string is 0 or 1, the function immediately returns 1.
+The print-strlen function is a helper function that calculates
+the length of a given string using recursion.
+
+The palindrome-checker function is the main recursive function that checks if a string is a palindrome.
+It takes in the string str, the starting index iStrlen, and the ending index i.
+The function continues to recurse until it reaches an empty string or a one-character string,
+which are both considered palindromes.
 
