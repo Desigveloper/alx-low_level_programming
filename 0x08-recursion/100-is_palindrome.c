@@ -9,12 +9,9 @@
 
 int is_palindrome(char *s)
 {
-	int cLen = 0;
+	int cLen = *s;
 
-	for (; s[cLen] != '\0'; cLen++)
-	{
-		;
-	}
+	print_str_len(s);
 
 	if (cLen <= 1)
 		return (1);
@@ -25,6 +22,18 @@ int is_palindrome(char *s)
 	_putchar(*s);
 	return(palindrome_helper_func(s, cLen, 1));
 
+}
+
+/**
+ * print_str_len - Prints the length of a string.
+ * @str: the string to be printed
+ * Return: length of string
+ */
+int print_str_len(char *str)
+{
+	if (*str == '\0')
+		return (0);
+	return (1 + print_str_len(str + 1));
 }
 
 /**
