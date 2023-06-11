@@ -6,6 +6,8 @@
  * Return: 0 (success) or 1 if an error
  */
 
+#include "main.h"
+
 int main(int argc, char *argv[])
 {
 	int i, j, sum = 0;
