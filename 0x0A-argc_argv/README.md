@@ -14,3 +14,7 @@ Print one argument per line, ending with a new line
 The program prints the result of the multiplication, followed by a new line.
 If the program does not receive two arguments, the program should print Error, 
 followed by a new line, and return 1
+
+4-add.c: A program that adds all positive numbers provided as argument. Prints the result, followed by a new line
+If no number is passed to the program, print 0, followed by a new line
+If one of the number contains symbols that are not digits, print Error, followed by a new line, and return 1
