@@ -6,6 +6,8 @@
   * Return: a pointer to the first occurence or NULL if none
   */
 
+#include "main.h"
+
 char *_strchr(char *s, char c)
 {
 	for (; *s != '\0'; s++)
