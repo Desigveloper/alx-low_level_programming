@@ -15,9 +15,8 @@ int is_palindrome(char *s)
 
 
 /**
- * print_strlen - a helper function that calculates the length of 
+ * print_strlen - a helper function that calculates the length of
  * a given string using recursion.
- *
  * @str: the string to be calculated
  * Return: length of string
  */
@@ -34,9 +33,9 @@ int print_strlen(char *str)
 
 /**
  * palindrome_checker - checks if string is palindrome.
- * @s: string base address.
- * @x1: left index.
- * @x2: rigth index.
+ * @str: string base address.
+ * @iStrlen: left index.
+ * @i: rigth index.
  * Return: 1 if s is palindrome, 0 otherwise.
  */
 int palindrome_checker(char *str, int iStrlen, int i)
