@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 
 	if (iCent < 0)
 	{
-		put("0");
+		puts("0");
 		return (0);
 	}
 
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 	iCoins += iCent / 2;
 	iCent %= 2;
 
-	iCoin += iCent; /* coin value @ 1 */
+	iCoins += iCent; /* coin value @ 1 */
 
 	printf("%d\n", iCoins);
 
