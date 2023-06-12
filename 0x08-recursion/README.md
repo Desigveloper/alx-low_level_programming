@@ -58,3 +58,6 @@ It takes in the string str, the starting index iStrlen, and the ending index i.
 The function continues to recurse until it reaches an empty string or a one-character string,
 which are both considered palindromes.
 
+101-wildcmp.c: A function that take two strings(s1, s2) as argument and compares if the are identical.
+Returns 1 if the strings can be considered identical, otherwise return 0.
+s2 can contain the special character *.

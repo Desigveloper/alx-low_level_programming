@@ -16,4 +16,5 @@ int is_prime_helper_func(int iNum, int iCounter);
 int is_palindrome(char *s);
 int palindrome_checker(char *str, int iStrlen, int i);
 int print_strlen(char *str);
+int wildcmp(char *s1, char *s2);
 #endif /*MAIN_H*/
