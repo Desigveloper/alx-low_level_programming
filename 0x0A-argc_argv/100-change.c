@@ -18,9 +18,9 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	iCents = atoi(argv[1]);
+	iCent = atoi(argv[1]);
 
-	if (iCents < 0)
+	if (iCent < 0)
 	{
 		put("0");
 		return (0);
