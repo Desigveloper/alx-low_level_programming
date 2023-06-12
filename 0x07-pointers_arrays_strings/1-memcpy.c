@@ -1,6 +1,6 @@
 /**
   * _memcpy - copies number(n) bytes from memory area pointed by src to dest
-  * @s: source of string
+  * @src: source of string
   * @n: number of bytes
   * @dest: destination of bytes
   *
