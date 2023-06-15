@@ -39,7 +39,7 @@ char *str_concat(char *s1, char *s2)
 		*(ch + y) = *(s1 + y);
 
 	for  (y = 0; y < j; ++y)
-		*(ch +(y + i)) = *(s2 + y);
+		*(ch + (y + i)) = *(s2 + y);
 
 	*(ch + (i + j)) = '\0';
 	return (ch);
