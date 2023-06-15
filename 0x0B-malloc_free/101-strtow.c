@@ -44,12 +44,14 @@ char **strtow(char *str)
 			if (*(q + qa) == NULL)
 			{
 				for (k = 0; k < qa; k++)
-					free(*(q + (k));
+					free(*(q + k));
 
 				free(*(q + (n1 - 1)));
 					free(q);
+
 				return (NULL);
 			}
+
 			for (l = 0; l < j; l++)
 				*(*(q + qa) + l) = *(str + (i + l));
 
