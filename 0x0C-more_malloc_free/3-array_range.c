@@ -23,6 +23,6 @@ int *array_range(int min, int max)
 	for (ctr = 0; ctr <= (max - min); ctr++ )
 		*(ptr_arr + ctr) = min + ctr;
 
-	retrun (ptr_arr);
+	return (ptr_arr);
 
 }
