@@ -9,3 +9,8 @@ setting each byte to the value of b. Finally, it returns a pointer to the memory
 1-memcpy.c: A function that copies memory area.
 The _memcpy() function copies n bytes from memory area src to memory area dest
 Returns a pointer to dest
+
+2-strchr.c: A function takes two parameters: a pointer to a string s and a character c.
+Iterates through the string using a loop, comparing each character to the target character c.
+If it finds a match, it returns a pointer to that character.
+If it reaches the end of the string without finding a match, it returns NULL.
