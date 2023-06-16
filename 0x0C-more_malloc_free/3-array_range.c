@@ -2,7 +2,7 @@
  * array_range - Creates an array of integers from min to max
  * @min: param, minimun integer
  * @max: param, maximum integer
- * Returns: ptr to newly created array or NULL if malloc fails or min > max
+ * Return: ptr to newly created array or NULL if malloc fails or min > max
  */
 
 #include "main.h"
