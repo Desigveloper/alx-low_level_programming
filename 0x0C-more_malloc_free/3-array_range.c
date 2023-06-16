@@ -7,7 +7,7 @@
 
 #include "main.h"
 
-int * array_range(int min, int max)
+int *array_range(int min, int max)
 {
 	int ctr *ptr_arr;
 
