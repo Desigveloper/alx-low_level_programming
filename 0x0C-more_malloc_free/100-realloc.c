@@ -7,6 +7,8 @@
  * Return: pointer allocate new size memory, or NULL
  */
 
+#include "main.h"
+
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 
