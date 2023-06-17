@@ -4,7 +4,7 @@
  * @old_size: param, old memry size
  * @new_size: param, new memory size
  *
- * Return: nothing
+ * Return: pointer allocate new size memory, or NULL
  */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
@@ -12,6 +12,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	char *new_ptr;
 	int i;
+	unsigned int n;
 
 	if (ptr == NULL)
 	{
@@ -32,9 +33,9 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (NULL);
 
 	if (new_size > old_size)
-		new_size = old_size;
+		n = old_size;
 
-	for (i = 0; i < newsize; i++)
+	for (i = 0; i < n; i++)
 		*(new_ptr + i) = *(ptr + i);
 
 	free(ptr);
