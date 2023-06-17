@@ -14,3 +14,7 @@ The memory is set to zero, if either nmemb or size is 0, _calloc then returns NU
 
 Task 3-array-range.c: A function that creates an array of integers containing all the values from min to max, inclusive.
 Returns NULL if  min is greater than max, or memory allocation fails.
+
+100-realloc.c: A function takes in a pointer to a previously allocated memory block, along with the old size and the new size.
+It then checks whether the pointer is NULL or not and whether the new size is 0.
+If the new size is 0, it frees the memory block and returns NULL.
