@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdio.h>
+#include <ctype.h>
 
 
 void *malloc_checked(unsigned int b);
