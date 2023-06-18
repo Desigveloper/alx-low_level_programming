@@ -18,3 +18,7 @@ Returns NULL if  min is greater than max, or memory allocation fails.
 100-realloc.c: A function takes in a pointer to a previously allocated memory block, along with the old size and the new size.
 It then checks whether the pointer is NULL or not and whether the new size is 0.
 If the new size is 0, it frees the memory block and returns NULL.
+
+101-mul.c: A program that take to var arguments and multiply them.
+If the number of arguments is incorrect, print Error, followed by a new line, and exit with a status of 98
+Also prints Error, followed by a new line, and exit with a status of 98, if num1 and num2 are not digits.
