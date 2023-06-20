@@ -1,6 +1,5 @@
 /**
- * This program print the file name from which it was compiled
- * main - entry point
+ * main - This program print the file name from which it was compiled
  * Return: nothing
  */
 
