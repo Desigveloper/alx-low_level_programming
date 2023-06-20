@@ -5,3 +5,7 @@ Then using the #ifndef preprocessor directive to ensure the file is includede on
 
 1-pi.h: The  #ifndef preprocessor directive ensures that the header file is included only once in a program.
 We then define the PI macro using the #define directive and assign it the value of 3.14159265359.
+
+2-main.c: this program uses the printf() function from the standard library to print the name of the file using the __FILE__ macro.
+The %s format specifier is used to indicate printing of a string with the new line character (\n) 
+to move to the next line after printing the file name.
