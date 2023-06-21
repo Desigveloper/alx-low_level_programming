@@ -12,3 +12,5 @@ to move to the next line after printing the file name.
 
 3-function-like-macro.h: This macro takes a number x and returns its absolute value.
 If x is negative, it negates it to make it positive. Otherwise, it returns x as is.
+
+4-sum.h: This macro takes numbers x and y and compute their sum.
