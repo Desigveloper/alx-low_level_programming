@@ -12,3 +12,7 @@ If an element is NULL, it prints (nil) instead of the element's value and  NULL,
 4-new-dog.c: This function create a new dog with values for name, age, and owner elements as dog_t variables.
 It allocates memory for the new dog and its strings, and copies the values of name and owner to the allocated memory. 
 If any of the memory allocations fail, it returns NULL.
+
+5-free-dog.c: This function first checks if the pointer d is not NULL, which would indicate that the memory
+has already been freed or was never allocated in the first place.
+If d is not NULL, the function frees the memory allocated for the name, owner, and dog_t struct itself using the free function.
