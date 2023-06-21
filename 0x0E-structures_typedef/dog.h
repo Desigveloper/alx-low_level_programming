@@ -1,6 +1,10 @@
 #ifndef DOG_H
 #define DOG_H
 
+#include <stdio.h>
+#include <stdlib.h>
+
+
 /* defines a struct called dog with 3 elements as basic info
  * * @name: first attribute
  * @age: second attribute
