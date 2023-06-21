@@ -1,3 +1,14 @@
+/**
+ * new_dog - creates a new dog
+ * @name: pointer to char array
+ * @age: age of dog
+ * @owner: pointer to char array owner of dog
+ *
+ * Return:  pointer to new dog or NULL if failure
+ */
+
+#include "dog.h"
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	/* Allocate memory for the new dog */
