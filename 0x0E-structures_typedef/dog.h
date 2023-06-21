@@ -5,12 +5,14 @@
 #include <stdlib.h>
 
 
-/* defines a struct called dog with 3 elements as basic info
- * * @name: first attribute
+/**
+ * struct dog - defines a struct called dog with 3 elements as basic info
+ * @name: first attribute
  * @age: second attribute
  * @owner: third attribute
  */
-struct dog {
+struct dog
+{
 	char *name;
 	float age;
 	char *owner;
