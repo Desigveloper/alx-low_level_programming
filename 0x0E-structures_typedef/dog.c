@@ -14,5 +14,9 @@ int main(void)
 	my_dog.owner = "Bob";
 	printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
 
+	
+	init_dog(&my_dog, "Fido", 2.5, "John");
+	printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
+
 	return (0);
 }
