@@ -9,3 +9,6 @@ We then define the PI macro using the #define directive and assign it the value 
 2-main.c: this program uses the printf() function from the standard library to print the name of the file using the __FILE__ macro.
 The %s format specifier is used to indicate printing of a string with the new line character (\n) 
 to move to the next line after printing the file name.
+
+3-function-like-macro.h: This macro takes a number x and returns its absolute value.
+If x is negative, it negates it to make it positive. Otherwise, it returns x as is.
