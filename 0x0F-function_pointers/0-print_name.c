@@ -1,5 +1,5 @@
 /**
- * print_name - take pointer to cahr atgument and prints to the screen as a name
+ * print_name - prints to the screen a name as argument
  * @name: param, pointer to char
  * @f: pointer to the printing function
  * Return: nothing
