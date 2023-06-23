@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 
-	ch = **(argv + 2);
+	ch = *argv[2];
 
 	if ((ch == '/' || ch == '%') && a2 == 0)
 	{

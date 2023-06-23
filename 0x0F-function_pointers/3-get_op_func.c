@@ -10,7 +10,7 @@
 
 int (*get_op_func(char *s))(int, int)
 {
-	int i = 0;
+	int i;
 
 	op_t ops[] = {
 		{"+", op_add},
