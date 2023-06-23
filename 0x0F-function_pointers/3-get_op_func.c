@@ -1,3 +1,5 @@
+#include "3-calc.h"
+
 /**
  * get_op_func - function pointer that selects the correct function to perform
  * operation base user input
@@ -5,12 +7,10 @@
  *
  * Return: pointer to the function that matches operator as a parameter
  */
-
-#include "3-calc.h"
-
 int (*get_op_func(char *s))(int, int)
 {
-	int i;
+	int i = 0;
+
 
 	op_t ops[] = {
 		{"+", op_add},
@@ -22,10 +22,11 @@ int (*get_op_func(char *s))(int, int)
 	};
 
 
-	for (i = 0; ops[i].op; i++)
+	while (ops[i].op)
 	{
 		if (strcmp(ops[i].op, s) == 0)
 			return (ops[i].f);
+		i++;
 	}
 
 	return (NULL);
