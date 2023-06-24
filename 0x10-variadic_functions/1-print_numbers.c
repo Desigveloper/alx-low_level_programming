@@ -23,7 +23,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		/* Print each digit of the number separately */
 		if (num < 0)
 		{
-			putchar('-');
+			_putchar('-');
 			num = -num;
 		}
 
@@ -35,7 +35,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		while (divisor > 0)
 		{
 			digit = num / divisor;
-			putchar(digit + '0');
+			_putchar(digit + '0');
 			num %= divisor;
 			divisor /= 10;
 		}
@@ -44,11 +44,13 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (i != n - 1 && separator != NULL)
 		{
 			while (*separator != '\0')
-				putchar(*separator++);
+				_putchar(*separator++);
+
+			_putchar(' ');
 		}
 	}
 
 	va_end(args);
 
-	putchar('\n');
+	_putchar('\n');
 }
