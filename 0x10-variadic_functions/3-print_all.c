@@ -11,12 +11,12 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	unsigned int i;
+	unsigned int i = 0;
 	p_data data = {0};
 
 	va_start(args, format);
 
-	for (i = 0; format && *(format + i); i++)
+	while (format && *(format + i))
 	{
 		switch (*(format + i))
 		{
@@ -40,6 +40,7 @@ void print_all(const char * const format, ...)
 					printf("%s", data.str);
 				break;
 		}
+		i++;
 	}
 	va_end(args);
 
