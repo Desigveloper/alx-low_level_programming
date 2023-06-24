@@ -13,8 +13,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	int num, digit, divisor;
 	va_list args;
-	va_start(args, n);
 
+	va_start(args, n);
 
 	for (i = 0; i < n; i++)
 	{
@@ -26,12 +26,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			_putchar('-');
 			num = -num;
 		}
-
 		divisor = 1;
-
 		while (divisor <= num / 10)
 			divisor *= 10;
-
 		while (divisor > 0)
 		{
 			digit = num / divisor;
@@ -45,12 +42,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		{
 			while (*separator != '\0')
 				_putchar(*separator++);
-
-			_putchar(' ');
 		}
 	}
-
 	va_end(args);
-
 	_putchar('\n');
 }
