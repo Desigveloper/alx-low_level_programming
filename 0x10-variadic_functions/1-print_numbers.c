@@ -11,7 +11,7 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
-	int num, digit, divisor;
+	int num;
 	va_list args;
 
 	va_start(args, n);
@@ -21,29 +21,13 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		num = va_arg(args, int);
 
 		/* Print each digit of the number separately */
-		if (num < 0)
-		{
-			_putchar('-');
-			num = -num;
-		}
-		divisor = 1;
-		while (divisor <= num / 10)
-			divisor *= 10;
-		while (divisor > 0)
-		{
-			digit = num / divisor;
-			_putchar(digit + '0');
-			num %= divisor;
-			divisor /= 10;
-		}
+		printf("%d", num);
 
-		/* Print separator if not last number */
-		if (i != n - 1 && separator != NULL)
-		{
-			while (*separator != '\0')
-				_putchar(*separator++);
-		}
+		/* checks if not end  of iterartion or not last number */
+		if(i != n - 1 && separator != NULL)
+			printf("%s", separator);
 	}
+
 	va_end(args);
 	_putchar('\n');
 }
