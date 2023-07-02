@@ -13,3 +13,7 @@ It then returns it once all nodes have been counted.
 2-add_node.c: A function that adds a new node at the beginning of a singly linked list.
 The function takes a pointer to a pointer to the head of the list (head) and a string (str) as arguments.
 The string is duplicated and stored in the new node. Finally, returns the address of the new node.
+
+3-add_node_end.c: A function that adds a new node at the end of a singly linked list.
+The function takes a pointer to a pointer to the head of the list (head) and a string (str) as arguments.
+The string is duplicated and stored in the new node. It returns the address of the new element, or NULL if it failed to allocate memory for the new node or the duplicated string.
