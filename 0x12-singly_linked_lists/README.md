@@ -9,3 +9,7 @@ It then returns the number of nodes in the list.
 1-list_len.c: A function that takes a pointer to the head of a singly linked list as its argument
 and counts the number of nodes in the list using a while loop.
 It then returns it once all nodes have been counted.
+
+2-add_node.c: A function that adds a new node at the beginning of a singly linked list.
+The function takes a pointer to a pointer to the head of the list (head) and a string (str) as arguments.
+The string is duplicated and stored in the new node. Finally, returns the address of the new node.
