@@ -7,4 +7,4 @@ main:
 	mov	eax, 0 ;moves the address of the string to a register
 	ret
 ;defines a string containt a text
-format: db "Hello, Holberton\n",0
+format: db `Hello, Holberton\n`,0
