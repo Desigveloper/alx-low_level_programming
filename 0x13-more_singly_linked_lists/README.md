@@ -11,3 +11,6 @@ and returns the number of nodes in the list.
 Creates a new node with the given value and adds it at the beginning of the list.
 Returns the address of the new element if successful,
 Or NULL if it fails to allocate memory for the new node.
+
+3-add_nodeint_end.c:  A function that takes a pointer to a pointer to the head of a singly linked list of integers
+adds a new node at the end of a listint_t list.
