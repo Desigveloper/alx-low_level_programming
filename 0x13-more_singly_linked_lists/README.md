@@ -19,3 +19,6 @@ adds a new node at the end of a listint_t list.
 and frees all of the memory used by the nodes in the list.
 It does this by iterating over the list with a while loop, freeing each node as it goes.
 
+5-free_listint2.c:A function that takes a pointer to a pointer to the head of a linked list of integers.
+It frees all of the memory used by the nodes in the list and sets the head pointer to NULL.
+
