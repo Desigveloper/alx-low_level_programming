@@ -22,3 +22,5 @@ It does this by iterating over the list with a while loop, freeing each node as 
 5-free_listint2.c:A function that takes a pointer to a pointer to the head of a linked list of integers.
 It frees all of the memory used by the nodes in the list and sets the head pointer to NULL.
 
+6-pop_listint.c: A function takes a pointer to a pointer to the head of a linked list of integers.
+It deletes the head node of the list and returns its data. If the list is empty, it returns 0.
