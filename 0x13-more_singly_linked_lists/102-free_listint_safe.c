@@ -1,6 +1,6 @@
 /**
  * free_listint_safe - frees a listint_t linked list.
- * @head: double pointer to the start of the list
+ * @h: double pointer to the start of the list
  *
  * Return: the number of nodes in the list
 */
@@ -9,33 +9,35 @@
 
 size_t free_listint_safe(listint_t **h)
 {
-	size_t len = 0;
+	size_t count = 0;
 	int diff;
-	listint_t *temp;
+	listint_t *temp_node;
 
 	if (!h || !*h)
 		return (0);
 
 	while (*h)
 	{
+		/* calculates the diff between the address of the */
+		 /* current node (*h) and address of the next ((*h)->next)*/
 		diff = *h - (*h)->next;
 		if (diff > 0)
 		{
-			temp = (*h)->next;
+			temp_node = (*h)->next;
 			free(*h);
-			*h = temp;
-			len++;
+			*h = temp_node;
+			count++;
 		}
 		else
 		{
 			free(*h);
 			*h = NULL;
-			len++;
+			count++;
 			break;
 		}
 	}
 
 	*h = NULL;
 
-	return (len);
+	return (count);
 }
