@@ -29,4 +29,7 @@ It deletes the head node of the list and returns its data. If the list is empty,
 Returns the sum of all the data (n) of the nodes in the list. If the list is empty, it returns 0.
 
 9-insert_nodeint.c: A function that takes a pointer to a pointer to the head node of a linked list, in an index where a new node should be added,
-and data to be stored in the new node as input. It returns the address of the new node if it was successfully added, or NULL if it failed 
+and data to be stored in the new node as input. It returns the address of the new node if it was successfully added, or NULL if it failed
+
+10-delete_nodeint.c: A function takes a pointer to a pointer to the head node of a linked list and an index of the node that should be deleted as input.
+It returns 1 if it succeeded, or -1 if it failed. 
