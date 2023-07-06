@@ -4,7 +4,6 @@
  *
  * Return: The number of nodes in the list or 98 if program fails.
  */
-
 #include "lists.h"
 
 size_t print_listint_safe(const listint_t *head)
