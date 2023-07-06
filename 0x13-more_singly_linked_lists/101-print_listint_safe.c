@@ -2,7 +2,7 @@
  * print_listint_safe - Prints a listint_t linked list.
  * @head: Pointer to the head node of the list.
  *
- * Return: The number of nodes in the list.
+ * Return: The number of nodes in the list or 98 if program fails.
  */
 
 #include "lists.h"
