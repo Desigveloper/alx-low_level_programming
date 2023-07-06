@@ -26,4 +26,7 @@ It frees all of the memory used by the nodes in the list and sets the head point
 It deletes the head node of the list and returns its data. If the list is empty, it returns 0.
 
 8-sum_listint.c: A function that takes a pointer to the head node of a linked list as input
-Returns the sum of all the data (n) of the nodes in the list. If the list is empty, it returns 0. 
+Returns the sum of all the data (n) of the nodes in the list. If the list is empty, it returns 0.
+
+9-insert_nodeint.c: A function that takes a pointer to a pointer to the head node of a linked list, in an index where a new node should be added,
+and data to be stored in the new node as input. It returns the address of the new node if it was successfully added, or NULL if it failed 

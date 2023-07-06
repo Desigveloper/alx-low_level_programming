@@ -9,9 +9,9 @@
 
 #include "lists.h"
 
-listint_int *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 {
-	listint_t *new_node, temp_node;
+	listint_t *new_node, *temp_node;
 	unsigned int i;
 
 	temp_node = *head;
@@ -19,22 +19,22 @@ listint_int *insert_nodeint_at_index(listint_t **head, unsigned int index, int n
 	if (head == NULL)
 		return (NULL);
 
-	new_node = malloc(sizeof(listint_int));
+	new_node = malloc(sizeof(listint_t));
 
 	if (new_node == NULL)
 		return (NULL);
 
 
-	new_node->head = n;
+	new_node->n= n;
 
-	if (index ==0)
+	if (index == 0)
 	{
-		new_node->head = *head;
+		new_node->next = *head;
 		*head = new_node;
 		return (new_node);
 	}
 
-	for (i -= 0; i < index - 1; i++)
+	for (i = 0; i < index - 1; i++)
 	{
 		if (temp_node == NULL)
 		{
