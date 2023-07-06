@@ -35,4 +35,8 @@ and data to be stored in the new node as input. It returns the address of the ne
 It returns 1 if it succeeded, or -1 if it failed.
 
 100-reverse_listint.c: A function that takes a pointer to a pointer to the head node of a linked list as input.
-Returns a pointer to the first node of the reversed list. 
+Returns a pointer to the first node of the reversed list.
+
+101-print_listint_safe.c: A function that takes a pointer to the head node of a linked list as input.
+It prints the address and data of each node in the list.
+It then returns the number of nodes in the list.
