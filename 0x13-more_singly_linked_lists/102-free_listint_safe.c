@@ -8,26 +8,32 @@
 
 size_t free_listint_safe(listint_t **h)
 {
-	size_t count = 0;
-	listint_t *current_node, *temp_node;
+	size_t i, num = 0;
+	listint_t **list = NULL, *next;
 
-	if (h == NULL)
-		return (0);
+	if (h == NULL || *h == NULL)
+		return (num);
 
-	current_node = *h;
-	*h = NULL;
-
-	while (current_node != NULL)
+	while (*h != NULL)
 	{
-		count++;
+		for (i = 0; i < num; i++)
+			if (*h == list[i])
+			{
+				free(list), list = NULL, *h = NULL;
+				return (num);
+			}
 
-		temp_node = current_node->next;
-		free(current_node);
+		num++;
+		list = realloc(list, num * sizeof(*list));
+		if (list == NULL)
+			exit(98);
+		list[num - 1] = *h;
 
-		if (temp_node >= current_node)
-			break;
-		current_node = temp_node;
+		next = (*h)->next;
+		free(*h);
+		*h = next;
 	}
-
-	return (count);
+	free(list), list = NULL;
+	return (num);
 }
+
