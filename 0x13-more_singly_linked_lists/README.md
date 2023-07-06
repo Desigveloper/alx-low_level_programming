@@ -32,4 +32,7 @@ Returns the sum of all the data (n) of the nodes in the list. If the list is emp
 and data to be stored in the new node as input. It returns the address of the new node if it was successfully added, or NULL if it failed
 
 10-delete_nodeint.c: A function takes a pointer to a pointer to the head node of a linked list and an index of the node that should be deleted as input.
-It returns 1 if it succeeded, or -1 if it failed. 
+It returns 1 if it succeeded, or -1 if it failed.
+
+100-reverse_listint.c: A function that takes a pointer to a pointer to the head node of a linked list as input.
+Returns a pointer to the first node of the reversed list. 
