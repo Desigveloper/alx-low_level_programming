@@ -11,7 +11,7 @@ listint_t *find_listint_loop(listint_t *head)
 {
 	listint_t *ptr_slow, *ptr_fast;
 
-       	if (!head || !head->next)
+	if (!head || !head->next)
 		return (NULL);
 
 	/* Initialize slow and fast pointers */
