@@ -1,7 +1,7 @@
 /**
- * print_binary - Takes unsigned int as input and prints 
+ * print_binary - Takes unsigned int as input and prints
  * the binary representation of a number
- * 
+ *
  * @n: the number to print
  * Return: void
  */
