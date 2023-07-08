@@ -10,14 +10,15 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int mask = 1;
+	unsigned long int display_mask = 1;
 	int i;
 
 	/* Find the most significant bit */
 	for (i = 0; i < 63; i++)
 	{
-		mask <<= 1;
-		if (mask > n)
+		display_mask <<= 1;
+
+		if (display_mask > n)
 			break;
 	}
 
@@ -25,7 +26,8 @@ void print_binary(unsigned long int n)
 	for (; i >= 0; i--)
 	{
 		if (n & (1ul << i))
-			putchar('1');
-		putchar('0');
+			_putchar('1');
+		else
+			_putchar('0');
 	}
 }
