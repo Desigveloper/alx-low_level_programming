@@ -1,7 +1,7 @@
 /**
  * get_endianness - Check the endianness of the machine.
- * 
- * @return 0 if big endian, 1 if little endian.
+ *
+ * Return: 0 if big endian, 1 if little endian.
  */
 #include "main.h"
 
