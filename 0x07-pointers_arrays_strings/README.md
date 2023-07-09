@@ -27,3 +27,7 @@ or NULL if no such byte is found.
 It iterates over each character in haystack and returns a pointer to the beginning of the located substring,
 or NULL if the substring is not found.
 
+7-print_chessboard.c: A function that takes a 2D array a representing the chessboard as an argument.
+It iterates over each row and column and prints the chessboard to the console.
+
+
