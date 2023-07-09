@@ -30,4 +30,10 @@ or NULL if the substring is not found.
 7-print_chessboard.c: A function that takes a 2D array a representing the chessboard as an argument.
 It iterates over each row and column and prints the chessboard to the console.
 
+8-print_diagsums.c: A function that takes in a pointer to the first element of a square matrix of integers,
+as well as the size of the matrix. It then iterates over the elements on the two diagonals of the matrix,
+using pointer arithmetic to access elements in the matrix adding them up separately.
+Finally, it prints out the sums of the two diagonals.
 
+100-set_string.c: A function that takes in two parameters: a pointer to a pointer to a char (char **s)
+and a pointer to a char (char *to). It sets the value of the pointer to a char (*s) to the value of to.
