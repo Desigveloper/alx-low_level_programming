@@ -23,3 +23,7 @@ which consist only of bytes from accept.
 It iterates over each character of s and returns a pointer to the byte in s that matches one of the bytes in accept,
 or NULL if no such byte is found.
 
+5-strstr.c: function takes two arguments: a string haystack to search and a substring needle to search for.
+It iterates over each character in haystack and returns a pointer to the beginning of the located substring,
+or NULL if the substring is not found.
+
