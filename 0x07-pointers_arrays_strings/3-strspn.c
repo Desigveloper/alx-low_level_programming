@@ -1,5 +1,5 @@
 /**
- * strspn - Calculates the length of the prefix substring of s.
+ * _strspn - Calculates the length of the prefix substring of s.
  *
  * @s: The string to search.
  * @accept: The string containing the characters to match.
