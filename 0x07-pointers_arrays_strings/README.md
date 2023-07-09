@@ -18,3 +18,8 @@ If it reaches the end of the string without finding a match, it returns NULL.
 3-strspn.c: A function that takes two arguments: a string s to search and a string accept containing the characters to match.
 It iterates over each character in s and returns an unsigned integer representing the number of bytes in the initial segment of s
 which consist only of bytes from accept.
+
+4-strpbrk.c: A function that takes two arguments: a string s to search and a string accept containing the bytes to match.
+It iterates over each character of s and returns a pointer to the byte in s that matches one of the bytes in accept,
+or NULL if no such byte is found.
+
