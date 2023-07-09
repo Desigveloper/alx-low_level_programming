@@ -1,5 +1,5 @@
 /**
- * print_diagsum - Calc and prints the sum of the 2 diagonals of a sqr matrix.
+ * print_diagsums - Calc and prints the sum of the 2 diagonals of a sqr matrix.
  * 
  * @a: Pointer to the first element of the matrix
  * @size: Size of the matrix (number of rows/columns)
@@ -15,8 +15,8 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 	{
-		sum1 += *(a + (i*size + i));
-		sum2 += *(a + (i*size + (size - i - 1)));
+		sum1 += *(a + (i * size + i));
+		sum2 += *(a + (i * size + (size - i - 1)));
 	}
 
 	printf("%d, %d\n", sum1, sum2);
