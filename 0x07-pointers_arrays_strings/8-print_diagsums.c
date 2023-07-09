@@ -1,6 +1,6 @@
 /**
  * print_diagsums - Calc and prints the sum of the 2 diagonals of a sqr matrix.
- * 
+ *
  * @a: Pointer to the first element of the matrix
  * @size: Size of the matrix (number of rows/columns)
  *
