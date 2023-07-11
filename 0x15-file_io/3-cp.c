@@ -38,7 +38,7 @@ void print_usage_err(char *program_name)
 
 void print_read_err(char *filename)
 {
-	dprintf(STDERR_FILENO, "Error: Can't read from this file%s\n", filename);
+	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 }
 
 /**
@@ -49,7 +49,7 @@ void print_read_err(char *filename)
 
 void print_write_err(char *filename)
 {
-	dprintf(STDERR_FILENO, "Error: Can't write to this file%s\n", filename);
+	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 }
 /**
  * print_close_err - Prints an error message for a close error
@@ -59,7 +59,7 @@ void print_write_err(char *filename)
 
 void print_close_err(int fd_value)
 {
-	dprintf(STDERR_FILENO, "Error: Cant close this file %d\n", fd_value);
+	dprintf(STDERR_FILENO, "Error: Cant close fd %d\n", fd_value);
 }
 
 /**
