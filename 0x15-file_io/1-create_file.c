@@ -12,27 +12,50 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	unsigned int fd, bytes_written;
+	int fop, bytes_written;
+	int len = _strlen(text_content);
 
 	if (filename == NULL)
 		return (-1);
 
-	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+	fop = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 
-	if (fd == -1)
+	if (fop == -1)
 		return (-1);
 
 	if (text_content != NULL)
 	{
-		bytes_written = write(fd, text_content, _strlen(text_content));
+		bytes_written = write(fop, text_content, len);
 
 		if (bytes_written == -1)
 		{
-			close(fd);
+			close(fop);
 			return (-1);
 		}
 	}
 
-		close(fd);
+		close(fop);
 		return (1);
 }
+
+
+/**
+ * _strlen - counts and return the length of a given string
+ * @str: the string to be counted
+ *
+ * Return: length of string or 0 if NULL
+ */
+
+int _strlen(char *str)
+{
+	int i, strLen = 0;
+
+	if (str == NULL)
+		return (0);
+
+	for (i = 0; *(str + i) != '\0'; i++)
+		strLen++;
+
+	return (strLen);
+}
+
