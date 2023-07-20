@@ -71,35 +71,6 @@ char *print_err_msg(char *msg)
 }
 
 /**
-* copy_content - Copies the content of one file to another
-* @fd_from: Descriptor of source file
-* @fd_to: Descriptor to destination file
-* @bytes_read: Number of characters read from file
-* @buffer: Pointer to text
-* Return: void
-*/
-
-void copy_content(int fd_from, int fd_to, ssize_t bytes_read, char *buffer)
-{
-	/* Copy contents of file_from to file_to */
-	while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
-	{
-		if (write(fd_to, buffer, bytes_read) != bytes_read)
-		{
-			print_err_msg("Error: Can't write to file");
-			exit(99);
-		}
-	}
-
-	/* Handle read error */
-	if (bytes_read == -1)
-	{
-		print_err_msg("Error: Can't read from file");
-		exit(98);
-	}
-}
-
-/**
  * close_fd - Closes file descriptors and handle errors
  * @fd_from: Descriptor of source file
  * @fd_to: Descriptor of receiving file
