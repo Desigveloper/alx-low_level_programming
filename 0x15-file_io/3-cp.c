@@ -6,7 +6,7 @@
  */
 
 #include "main.h"
-int handle_errors(ssize_t b_read, int fd_f, int fd_t, char *argv[]);
+
 int main(int argc, char *argv[])
 {
 	int fd_from = -1, fd_to = -1;
@@ -79,6 +79,14 @@ void print_err_msg(char *filename, int err_code)
 			break;
 	}
 }
+
+/**
+ * handle_errors - Handles files reading and closing error
+ * @b_read: Number of bytes read from file
+ * @fd_fr: file discriptor for source file
+ * @fd_to: file discriptor for destination file
+ * argv: array of command arguments
+ */
 
 int handle_errors(ssize_t b_read, int fd_fr, int fd_to, char *argv[])
 {
