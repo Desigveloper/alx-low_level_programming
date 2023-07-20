@@ -9,10 +9,11 @@
 
 int main(int argc, char *argv[])
 {
-	int fd_from, fd_to;
+	int fd_from = -1;
+	int fd_to = -1;
 	char buffer[BUFFER_SIZE];
-	ssize_t bytes_read;
-	char *err_msg;
+	ssize_t bytes_read = 0;
+	char *err_msg = NULL;
 
 	if (argc != 3) /* Check for correct number of arguments */
 	{
