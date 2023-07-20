@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3) /* Check for correct number of arguments */
 	{
-		print_usage();
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
@@ -96,14 +96,4 @@ void print_err_msg(char *filename, int err_code)
 		default:
 			break;
 	}
-}
-
-/**
- * print_usage - Prints the usage of the program
- * Return: void
- */
-
-void print_usage(void)
-{
-	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 }
