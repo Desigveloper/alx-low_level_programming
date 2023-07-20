@@ -27,8 +27,7 @@ int main(int argc, char *argv[])
 	}
 
 	/* Open file_to for reading, truncate if file exists else create it */
-	fd_to = open(fileto, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR
-			 | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
+	fd_to = open(fileto, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 	if (fd_to == -1) /* Handle reading error */
 	{
 		print_err_msg(argv[2], 99);
