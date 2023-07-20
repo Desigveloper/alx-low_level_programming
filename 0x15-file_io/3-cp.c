@@ -9,9 +9,9 @@
 
 int main(int argc, char *argv[])
 {
-	int fd_from = -1, fd_to = -1;
+	int fd_from, fd_to;
 	char buffer[BUFFER_SIZE];
-	ssize_t bytes_read = 0;
+	ssize_t bytes_read;
 
 	if (argc != 3) /* Check for correct number of arguments */
 	{
@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 		}
 	}
 	/* Handle read errors */
-	handle_errors(bytes_read, fd_from, fd_to, *argv);
+	handle_errors(bytes_read, fd_from, fd_to, argv);
 
 	return (0);
 }
