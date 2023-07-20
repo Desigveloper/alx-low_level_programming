@@ -96,14 +96,18 @@ void copy_content(int fd_from, int fd_to, ssize_t bytes_read, char *buffer)
 
 void close_fd(int fd_from,  int fd_to, char *err_msg)
 {
-	if (close(fd_from) == -1)
+	int close_status;
+
+	close_status = close(fd_from_);
+	if (close_status == -1)
 	{
 		err_msg = print_err_msg("Error: Can't close fd");
 		dprintf(STDERR_FILENO, "%s %d\n", err_msg, fd_from);
 		exit(100);
 	}
 
-	if (close(fd_to) == -1)
+	close_status = close(fd_to);
+	if (close_status == -1)
 	{
 		err_msg = print_err_msg("Error: Can't close fd");
 		dprintf(STDERR_FILENO, "%s %d\n", err_msg, fd_to);
