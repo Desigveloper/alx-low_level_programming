@@ -9,11 +9,9 @@
 
 int main(int argc, char *argv[])
 {
-	int fd_from = -1;
-	int fd_to = -1;
-	char buffer[BUFFER_SIZE];
-	ssize_t bytes_read = 0;
-	char *err_msg = NULL;
+	int fd_from, fd_to;
+	char buffer[BUFFER_SIZE], *err_msg;
+	ssize_t bytes_read;
 
 	if (argc != 3) /* Check for correct number of arguments */
 	{
@@ -38,8 +36,22 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	copy_content(fd_from, fd_to, bytes_read, buffer);
-
+	/* Copy contents of file_from to file_to */
+	while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
+	{
+		if (write(fd_to, buffer, bytes_read) != bytes_read)
+		{
+			print_err_msg("Error: Can't write to file");
+			
+			exit(99);
+		}
+	}
+	/* Handle read error */
+	if (bytes_read == -1)
+	{
+		print_err_msg("Error: Can't read from file");
+		exit(98)
+	}
 	/* Close file descriptors and handle errors */
 	close_fd(fd_from, fd_to, err_msg);
 
