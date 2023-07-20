@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 		}
 	}
 	/* Handle read errors */
-	handle_errors(bytes_read, fd_from, fd_to, argv);
+	handle_errors(bytes_read, fd_from, fd_to, *argv);
 
 	return (0);
 }
