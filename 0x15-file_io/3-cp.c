@@ -6,7 +6,7 @@
  */
 
 #include "main.h"
-int handle_errors(ssize_t b_read, int fd_f, int fd_t, int argc, char *argv[]);
+int handle_errors(ssize_t b_read, int fd_f, int fd_t, char *argv[]);
 int main(int argc, char *argv[])
 {
 	int fd_from = -1, fd_to = -1;
@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 		}
 	}
 	/* Handle read errors */
-	handle_errors(bytes_read, fd_from, fd_to, argc, *argv[])
+	handle_errors(bytes_read, fd_from, fd_to, argv);
 
 	return (0);
 }
@@ -80,7 +80,7 @@ void print_err_msg(char *filename, int err_code)
 	}
 }
 
-int handle_errors(ssize_t b_read, int fd_fr, int fd_to, int argc, char *argv[])
+int handle_errors(ssize_t b_read, int fd_fr, int fd_to, char *argv[])
 {
 	/* Handle read error */
 	if (b_read == -1)
@@ -102,4 +102,6 @@ int handle_errors(ssize_t b_read, int fd_fr, int fd_to, int argc, char *argv[])
 		print_err_msg(NULL, 100);
 		return (100);
 	}
+
+	return (1);
 }
