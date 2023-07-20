@@ -9,9 +9,9 @@
 int handle_errors(ssize_t b_read, int fd_f, int fd_t, int argc, char *argv[]);
 int main(int argc, char *argv[])
 {
-	int fd_from, fd_to;
+	int fd_from = -1, fd_to = -1;
 	char buffer[BUFFER_SIZE];
-	ssize_t bytes_read;
+	ssize_t bytes_read = 0;
 
 	if (argc != 3) /* Check for correct number of arguments */
 	{
