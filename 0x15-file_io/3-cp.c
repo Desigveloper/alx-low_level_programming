@@ -85,7 +85,8 @@ void print_err_msg(char *filename, int err_code)
  * @b_read: Number of bytes read from file
  * @fd_fr: file discriptor for source file
  * @fd_to: file discriptor for destination file
- * argv: array of command arguments
+ * @argv: array of command arguments
+ * Return: Error code or 1
  */
 
 int handle_errors(ssize_t b_read, int fd_fr, int fd_to, char *argv[])
