@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	fd_from = open(argv[1], O_RDONLY); /* Open file_from for reading */
 	if (fd_from == -1) /* Handle reading error*/
 	{
-		err_msg = print_err_msg(argv[1], err_98);
+		print_err_msg(argv[1], 98);
 		exit(98);
 	}
 
@@ -30,8 +30,8 @@ int main(int argc, char *argv[])
 	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0666);
 	if (fd_to == -1) /* Handle reading error */
 	{
-		err_msg = print_err_msg(argv[2], err_99);
-		close(file_from);
+		print_err_msg(argv[2], 99);
+		close(fd_from);
 		exit(99);
 	}
 
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 	{
 		if (write(fd_to, buffer, bytes_read) != bytes_read)
 		{
-			print_err_msg(argv[2], err_99);
+			print_err_msg(argv[2], 99);
 			close(fd_from);
 			close(fd_to);
 			return (99);
@@ -49,21 +49,21 @@ int main(int argc, char *argv[])
 	/* Handle read error */
 	if (bytes_read == -1)
 	{
-		print_err_msg(argv[1], err_98);
+		print_err_msg(argv[1], 98);
 		close(fd_from);
 		close(fd_to);
-		exit(98)
+		exit(98);
 	}
 	/* Close file descriptors and handle errors */
 	if (close(fd_from) == -1)
 	{
-		print_err_msg(NULL, err_100);
+		print_err_msg(NULL, 100);
 		close(fd_to);
 		return (100);
 	}
 	if(close(fd_to) == -1)
 	{
-		print_err_msg(NULL, err_100);
+		print_err_msg(NULL, 100);
 		return (100);
 	}
 
@@ -79,21 +79,17 @@ int main(int argc, char *argv[])
 
 void print_err_msg(char *filename, int err_code)
 {
-	int err_98 = 98;
-	int err_99 = 99;
-	int err_100 = 100;
-
 	switch (err_code)
 	{
-		case err_98:
+		case 98:
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n",
 					filename);
 			break;
-		case err_99:
+		case 99:
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n",
 					filename);
 			break;
-		case err_100:
+		case 100:
 			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n",
 					errno);
 			break;
