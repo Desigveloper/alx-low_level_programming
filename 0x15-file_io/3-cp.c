@@ -6,7 +6,7 @@
  */
 
 #include "main.h"
-
+int handle_errors(ssize_t b_read, int fd_f, int fd_t, int argc, char *argv[]);
 int main(int argc, char *argv[])
 {
 	int fd_from, fd_to;
@@ -25,7 +25,6 @@ int main(int argc, char *argv[])
 		print_err_msg(argv[1], 98);
 		exit(98);
 	}
-
 	/* Open file_to for reading, truncate if file exists else create it */
 	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC,
 			S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
@@ -47,26 +46,8 @@ int main(int argc, char *argv[])
 			return (99);
 		}
 	}
-	/* Handle read error */
-	if (bytes_read == -1)
-	{
-		print_err_msg(argv[1], 98);
-		close(fd_from);
-		close(fd_to);
-		exit(98);
-	}
-	/* Close file descriptors and handle errors */
-	if (close(fd_from) == -1)
-	{
-		print_err_msg(NULL, 100);
-		close(fd_to);
-		return (100);
-	}
-	if(close(fd_to) == -1)
-	{
-		print_err_msg(NULL, 100);
-		return (100);
-	}
+	/* Handle read errors */
+	handle_errors(bytes_read, fd_from, fd_to, argc, *argv[])
 
 	return (0);
 }
@@ -96,5 +77,29 @@ void print_err_msg(char *filename, int err_code)
 			break;
 		default:
 			break;
+	}
+}
+
+int handle_errors(ssize_t b_read, int fd_fr, int fd_to, int argc, char *argv[])
+{
+	/* Handle read error */
+	if (b_read == -1)
+	{
+		print_err_msg(argv[1], 98);
+		close(fd_fr);
+		close(fd_to);
+		exit(98);
+	}
+	/* Close file descriptors and handle errors */
+	if (close(fd_fr) == -1)
+	{
+		print_err_msg(NULL, 100);
+		close(fd_to);
+		return (100);
+	}
+	if(close(fd_to) == -1)
+	{
+		print_err_msg(NULL, 100);
+		return (100);
 	}
 }
