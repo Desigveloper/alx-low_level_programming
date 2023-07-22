@@ -101,12 +101,12 @@ int handle_errors(ssize_t b_read, int fd_fr, int fd_to, char *argv[])
 	{
 		print_err_msg(NULL, 100);
 		close(fd_to);
-		exit (100);
+		exit(100);
 	}
 	if (close(fd_to) == -1)
 	{
 		print_err_msg(NULL, 100);
-		exit (100);
+		exit(100);
 	}
 
 	return (1);
