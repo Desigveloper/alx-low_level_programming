@@ -34,7 +34,6 @@ int main(int argc, char *argv[])
 		close(fd_from);
 		exit(99);
 	}
-
 	/* Copy contents of file1 to file2 using a buffer size of 1024 bytes */
 	while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
 	{
@@ -46,9 +45,7 @@ int main(int argc, char *argv[])
 			return (99);
 		}
 	}
-	/* Handle read errors */
 	handle_errors(bytes_read, fd_from, fd_to, argv);
-
 	return (0);
 }
 
@@ -106,7 +103,7 @@ int handle_errors(ssize_t b_read, int fd_fr, int fd_to, char *argv[])
 		close(fd_to);
 		return (100);
 	}
-	if(close(fd_to) == -1)
+	if (close(fd_to) == -1)
 	{
 		print_err_msg(NULL, 100);
 		return (100);
