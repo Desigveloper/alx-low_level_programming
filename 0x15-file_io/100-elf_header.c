@@ -9,6 +9,7 @@
 
 int main(int argc, char **argv)
 {
+	Elf64_Ehdr header;
 	int fd;
 
 	if (argc != 2)
@@ -18,8 +19,6 @@ int main(int argc, char **argv)
 
 	if (fd == -1)
 		print_error("Error opening file");
-
-	Elf64_Ehdr header;
 
 	if (read(fd, &header, sizeof(header)) != sizeof(header))
 		print_error("Error reading ELF header");
@@ -43,10 +42,10 @@ int main(int argc, char **argv)
 
 void print_error(char *msg)
 {
-	// Print the error message to stderr
+	/* Print the error message to stderr */
 	fprintf(stderr, "%s\n", msg);
 
-	// Exit the program with code 98
+	/* Exit the program with code 98 */
 	exit(98);
 }
 
@@ -58,10 +57,12 @@ void print_error(char *msg)
 
 void print_elf_header(Elf64_Ehdr *header)
 {
+	int i;
+
 	printf("ELF Header:\n");
 	printf("  Magic:   ");
 
-	for (int i = 0; i < EI_NIDENT; i++)
+	for (i = 0; i < EI_NIDENT; i++)
 		printf("%02x ", header->e_ident[i]);
 
 	printf("\n");

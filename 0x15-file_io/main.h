@@ -19,7 +19,7 @@ int append_text_to_file(const char *filename, char *text_content);
 void print_err_msg(char *filename, int err_code);
 int handle_errors(ssize_t b_read, int fd_f, int fd_t, char *argv[]);
 
-void print_error(char _msg);
-void print_els_header(Elf64_Ehdr *header);
+void print_error(char *msg);
+void print_elf_header(Elf64_Ehdr *header);
 
 #endif
