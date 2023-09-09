@@ -59,7 +59,7 @@ void update_node_value(hash_node_t *node, const char *value)
 *
 * Return: 1 if the operation succeeded, 0 otherwise
 */
-int create_node(hash_table_t *ht, char *k, char *val, unsigned long int ind)
+int create_node(hash_table_t *ht, const char *k, const char *val, unsigned long int ind)
 {
 	hash_node_t *new_node;
 	char *key_copy;
