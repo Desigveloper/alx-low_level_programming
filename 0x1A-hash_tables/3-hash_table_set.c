@@ -34,7 +34,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 
 	/* Key does not exist, create a new node */
-	result = create_new_node(ht, key, value, index);
+	result = create_node(ht, key, value, index);
 	return (result);
 }
 
@@ -50,14 +50,16 @@ void update_node_value(hash_node_t *node, const char *value)
 }
 
 /**
-* create_new_node - Creates a new node with the specified key and value
+* create_node - Creates a new node with the specified key and value
 * and adds it to the hash table
 * @ht: Pointer to the hash table
-* @key: The key for the new node
-* @value: The value to the new node
-* @index: The index in the array where the new node should be added
+* @k: The key for the new node
+* @val: The value to the new node
+* @ind: The index in the array where the new node should be added
+*
+* Return: 1 if the operation succeeded, 0 otherwise
 */
-int create_new_node(hash_table_t *ht, const char *key, const char *value, unsigned long int index)
+int create_node(hash_table_t *ht, char *k, char *val, unsigned long int ind)
 {
 	hash_node_t *new_node;
 	char *key_copy;
@@ -68,10 +70,10 @@ int create_new_node(hash_table_t *ht, const char *key, const char *value, unsign
 	if (new_node == NULL)
 		return (0); /* Memory allocation failed */
 
-	key_copy = strdup(key);
-	value_copy = (value != NULL) ? strdup(value) : NULL;
+	key_copy = strdup(k);
+	value_copy = (val != NULL) ? strdup(val) : NULL;
 
-	if (key_copy == NULL || (value != NULL && value_copy == NULL))
+	if (key_copy == NULL || (val != NULL && value_copy == NULL))
 	{
 		free(new_node);
 		free(key_copy);
@@ -81,8 +83,8 @@ int create_new_node(hash_table_t *ht, const char *key, const char *value, unsign
 
 	new_node->key = key_copy;
 	new_node->value = value_copy;
-	new_node->next = ht->array[index];
-	ht->array[index] = new_node;
+	new_node->next = ht->array[ind];
+	ht->array[ind] = new_node;
 
 	return (1); /* Operation succeeded */
 }
