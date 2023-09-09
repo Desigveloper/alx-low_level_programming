@@ -11,13 +11,17 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int index = key_index((const unsigned char *) key, ht->size);
-	hash_node_t *new_node = malloc(sizeof(hash_node_t));
-	char *key_copy = strdup(key);
-	char *value_copy = (value != NULL) ? strdup(value) : NULL;
+	unsigned long int index;
+	hash_node_t *new_node;
+	char *key_copy;
+	char *value_copy;
 
 	if (ht == NULL || key == NULL || *key == '\0')
 		return (0); /* Invalid parameters */
+	index = key_index((const unsigned char *) key, ht->size);
+	new_node = malloc(sizeof(hash_node_t));
+	key_copy = strdup(key);
+	value_copy = (value != NULL) ? strdup(value) : NULL;
 
 	if (new_node == NULL)
 		return (0); /* Memory allocation failed */
