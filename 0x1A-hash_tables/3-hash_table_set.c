@@ -13,7 +13,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index = key_index((const unsigned char *) key, ht->size);
 	hash_node_t *new_node = malloc(sizeof(hash_node_t));
-	    
 	char *key_copy = strdup(key);
 	char *value_copy = (value != NULL) ? strdup(value) : NULL;
 
@@ -29,19 +28,21 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(key_copy);
 		free(value_copy);
 		return (0); /* Memory allocation failed */
-    }
+	}
 
 	new_node->key = key_copy;
 	new_node->value = value_copy;
 	new_node->next = NULL;
 
 	if (ht->array[index] == NULL)
+	{
 		ht->array[index] = new_node; /* No collision, add new node to the array */
+	}
 	else
 	{
 		/* Collision, add new node at the beginning of the list */
 		new_node->next = ht->array[index];
-		 ht->array[index] = new_node;
+		ht->array[index] = new_node;
 	}
 
 	return (1); /* Operation succeeded */
