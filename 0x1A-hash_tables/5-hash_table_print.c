@@ -10,13 +10,10 @@ void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i;
 	hash_node_t *node;
-	int not_last = 1;
+	int not_last = 0;/* No data has been printed yet or is the last element */
 
-	if (ht == NULL)
-	{
-		printf("{}\n"); /* If ht is NULL, print an empty hash table & return */
-		return;
-	}
+	if (ht == NULL || ht->array == NULL)
+		return; /* If ht is NULL, print nothing */
 
 	printf("{");
 	for (i = 0; i < ht->size; i++)
@@ -25,12 +22,10 @@ void hash_table_print(const hash_table_t *ht)
 
 		while (node != NULL)
 		{
-			if (!not_last)
+			if (not_last == 1)
 				printf(", ");
-			else
-				not_last = 0;
-
 			printf("'%s': '%s'", node->key, node->value);
+			not_last = 1;
 			node = node->next;
 		}
 	}
