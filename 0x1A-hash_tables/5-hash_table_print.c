@@ -12,7 +12,7 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *node;
 	int not_last = 0;/* No data has been printed yet or is the last element */
 
-	if (ht == NULL || ht->array == NULL)
+	if (ht == NULL)
 		return; /* If ht is NULL, print nothing */
 
 	printf("{");
