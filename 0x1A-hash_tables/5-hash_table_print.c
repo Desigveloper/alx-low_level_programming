@@ -12,10 +12,13 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *node;
 	int not_last = 1;
 
-	printf("{");
 	if (ht == NULL)
-		return; /* If ht is NULL, dont print anything */
+	{
+		printf("{}\n"); /* If ht is NULL, print an empty hash table & return */
+		return;
+	}
 
+	printf("{");
 	for (i = 0; i < ht->size; i++)
 	{
 		node = ht->array[i];
